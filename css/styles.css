@@ -1,0 +1,165 @@
+/* CSS Reset */
+body, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style Rules for body and images */
+body {
+    background: #014D22;
+}
+
+/* Style Rules for Mobile Viewport */
+/* Style Rules for Header */
+header {
+    top: 0;
+    
+}
+
+/* Style Rules for Hamburger Menu */
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu-icon div {
+    height: 50px;
+    width: 50px;
+    background-color: #014D22;
+}
+
+/* Show Mobile class, hide tablet-desktop class and menu-links id */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop-nav, #menu-links {
+    display: none;
+}
+
+/* Style rules for main content */
+main {
+    background-color: #fff;  
+}
+
+
+/* Style rules for footer content */
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+    
+    /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
+    .tablet-desktop-nav {
+    display: block;
+  }
+
+    .mobile, .mobile-nav {
+    display: none;
+  }
+    
+    /* Tablet Viewport: Style rule for header */
+    header {
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
+    
+    /* Tablet Viewport: Style rules for nav area */
+    nav {
+        padding: 1%;
+        margin-bottom: 1%;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+    
+    nav li {
+        font-size: 1.5em;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+    
+    nav li:last-child {
+    border-right: none;
+    }
+    
+    nav li a {
+        padding: 0.1em 0.75em;
+        display: block;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    /* Tablet Viewport: Style Rules for main content area */
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+    
+    /* Desktop Viewport: Style rules for header */
+    header {
+        float: left;
+        padding-bottom: 0;
+    }
+    
+    /* Desktop Viewport: Style rules for nav area  */
+    nav {
+        float: right;
+        width: 80%;
+        margin: 4em 1em 0 0;
+    }
+    
+    nav ul {
+        text-align: right;
+    }
+    
+    nav li {
+        border: none;
+    }
+    
+    nav li a {
+        padding: 0.5em 1em;
+    }
+    
+    nav li a:hover {
+        color: #fff;
+        background-color: #22A858;
+    }
+    
+    
+    /* Desktop Viewport: Style rules for main content */
+    
+}
+
+/* Media Query for large desktop viewports */
+@media screen and (min-width: 1921px) {
+      #container {
+    width: 1920px;
+    margin: 0 auto;
+  }
+
+  table {
+    width: 80%;
+  }
+}
+
+/* Media Query for Print */
+@media print {
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+}
