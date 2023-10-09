@@ -14,7 +14,13 @@ body {
 /* Style Rules for Header */
 header {
     top: 0;
-    
+    background-color: #014D22;
+}
+
+header img {
+    margin: 0 auto;
+    padding-left: 3%;
+    padding-top: 3%;
 }
 
 /* Style Rules for Hamburger Menu */
@@ -112,14 +118,16 @@ main {
     /* Desktop Viewport: Style rules for header */
     header {
         float: left;
-        padding-bottom: 0;
+        padding-bottom: 5px;
+        margin-left: 15px; 
+        width: 10%
     }
     
     /* Desktop Viewport: Style rules for nav area  */
     nav {
         float: right;
-        width: 80%;
-        margin: 4em 1em 0 0;
+        width: 85%;
+        margin: 0 1em 0 0;
     }
     
     nav ul {
@@ -141,18 +149,16 @@ main {
     
     
     /* Desktop Viewport: Style rules for main content */
-    
-}
+    main {
+        clear: left;
+    }
+
 
 /* Media Query for large desktop viewports */
 @media screen and (min-width: 1921px) {
       #container {
     width: 1920px;
     margin: 0 auto;
-  }
-
-  table {
-    width: 80%;
   }
 }
 
