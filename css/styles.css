@@ -2,12 +2,12 @@
 body, header, nav, main, footer {
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 /* Style Rules for body and images */
 body {
-    background: #014D22;
+    background: #014D22;   
 }
 
 /* Style Rules for Mobile Viewport */
@@ -124,32 +124,68 @@ main {
     }
     
     /* Desktop Viewport: Style rules for nav area  */
-    nav {
+    .tablet-desktop-nav {
         float: right;
         width: 85%;
-        margin: 0 1em 0 0;
+        margin: 0;
     }
     
-    nav ul {
-        text-align: right;
+    .tablet-desktop-nav ul {
+        display: inline-block;
+        position: absolute;
+        background: #014D22;
+        list-style: none;
     }
     
-    nav li {
+    .tablet-desktop-nav ul li {
+        display: inline-block;
         border: none;
+        padding: 0;
+        width: auto;
     }
     
-    nav li a {
+    .tablet-desktop-nav ul li a {
+        color: #fff;
+        display: block;
         padding: 0.5em 1em;
+        width: auto;
+        text-align: center;
+        text-decoration: none;
     }
     
-    nav li a:hover {
+    .tablet-desktop-nav ul li:hover {
         color: #fff;
         background-color: #22A858;
     }
     
     /* dropdown nav for events */
-
     
+    .eventsDropdown {
+        display: none;
+    }
+    
+    .tablet-desktop-nav ul li:hover .eventsDropdown {
+        display: block;
+        position: absolute;
+        background-color: #014D22;
+        margin-top: 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        
+    }
+    
+    .tablet-desktop-nav ul li:hover .eventsDropdown ul {
+        display: block;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .tablet-desktop-nav ul li:hover .eventsDropdown ul li a {
+        text-align: left;
+        font-size: .5em;
+        
+    }
+
     
     
     /* Desktop Viewport: Style rules for main content */
