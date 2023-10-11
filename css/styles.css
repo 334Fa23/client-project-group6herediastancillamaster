@@ -62,6 +62,35 @@ main {
 
 
 /* Style rules for footer content */
+footer {
+    text-align: center;
+    color: #fff;
+    font-size: 0.65em;
+}
+.footer-contact {
+    display: block;
+    padding-bottom: 2%;
+}
+
+.footer-contact ul {
+    list-style: none;
+    padding-right: 10%;
+}
+
+.footer-contact li a {
+    color: #fff;
+}
+
+.socials {
+    display: inline-block;
+    text-align: center;
+    padding: 4%;
+}
+
+/* Hide footer navigation and logo for mobile viewport */
+.footer-nav, #footer-logo {
+    display: none;
+}
 
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 630px), print {
@@ -99,7 +128,7 @@ main {
     }
     
     .tablet-desktop-nav li:last-child {
-    border-right: none;
+        border-right: none;
     }
     
     .tablet-desktop-nav li a {
@@ -115,6 +144,60 @@ main {
     }
     
     /* Tablet Viewport: Style Rules for main content area */
+    
+    /* Tablet Viewport: Style Rules for footer*/
+    footer {
+        color: #fff;
+    }
+    
+    footer p {
+        text-align: right;
+        padding-right: 3%;
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    #footer-logo {
+        display: block;
+        float: left;
+        padding: 0 3% 0 3%;
+    }
+    
+    .footer-nav {
+        display: grid;
+    }
+    
+    .footer-nav li {
+        list-style: none;
+        text-align: left;
+    }
+    
+    .footer-nav li a{
+        color: #fff;
+    }
+    
+    .container-socials-content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    
+    .socials {
+        text-align: right;
+        padding-right: 10%;
+    }
+    
+    .socials a {
+        padding-left: 2%;
+    }
+    
+    .footer-contact li {
+        text-align: right;
+    }
+    
+    
 }
 
 /* Media Query for Desktop Viewport */
