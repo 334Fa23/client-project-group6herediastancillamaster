@@ -162,8 +162,8 @@ footer {
     
     #footer-logo {
         display: block;
-        float: left;
-        padding: 0 3% 0 3%;
+        text-align: left;
+        padding-left: 15%;
     }
     
     .footer-nav {
@@ -196,7 +196,6 @@ footer {
     .footer-contact li {
         text-align: right;
     }
-    
     
 }
 
@@ -280,7 +279,12 @@ footer {
     main {
         clear: left;
     }
-
+    
+    /* Desktop Viewport: Style rules for footer */
+    #footer-logo {
+        text-align: left;
+        padding: 6%;
+    }
 
 /* Media Query for large desktop viewports */
 @media screen and (min-width: 1921px) {
