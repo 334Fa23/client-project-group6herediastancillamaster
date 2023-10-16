@@ -10,6 +10,12 @@ body {
     background: #014D22;   
 }
 
+img, video {
+  max-width: 100%;
+  display: block;
+}
+
+
 /* Style Rules for Mobile Viewport */
 /* Style Rules for Header */
 header {
@@ -52,7 +58,7 @@ header img {
     display: block;
 }
 
-.tablet-desktop-nav, #menu-links {
+.tablet-desktop-nav, #menu-links, #heroimg-tab-desk {
     display: none;
 }
 
@@ -110,7 +116,7 @@ footer {
 @media screen and (min-width: 630px), print {
     
     /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
-    .tablet-desktop-nav {
+    .tablet-desktop-nav, #heroimg-tab-desk {
     display: block;
   }
 
