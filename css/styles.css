@@ -5,6 +5,12 @@ body, header, nav, main, footer {
     box-sizing: border-box;
 }
 
+
+/* Style Rules for Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Style Rules for body and images */
 body {
     background: #014D22;   
@@ -64,7 +70,8 @@ header img {
 
 /* Style rules for main content */
 main {
-    background-color: #fff;  
+    background-color: #fff;
+    padding: 50px 60px 80px;
 }
 
 h2 {
