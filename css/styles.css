@@ -11,7 +11,7 @@ body {
 }
 
 img {
-    max-width: 50%;
+    max-width: 100%;
     display: block;
 }
 
@@ -19,6 +19,7 @@ img {
 /* Style Rules for Header */
 header {
     top: 0;
+    padding-bottom: 15px;
     background-color: #014D22;
 }
 
@@ -53,21 +54,27 @@ header img {
 }
 
 /* Show Mobile class, hide tablet-desktop class and menu-links id */
-.mobile {
+.mobile, #heroimg-mobile {
     display: block;
 }
 
-.tablet-desktop-nav, #menu-links {
+.tablet-desktop-nav, #menu-links, #heroimg-tab-desk {
     display: none;
 }
 
 /* Style rules for main content */
 main {
     background-color: #fff;  
+    padding: 10px 60px 80px;
 }
 
 h2 {
     color: #B4965C;
+    font-family: "DM Sans", sans-serif;
+}
+
+h3 {
+    color: #014D22;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -76,6 +83,39 @@ p {
     font-weight: 400;
     font-style: normal;
 }
+
+#index-who {
+    float: left;
+    display: block;
+}
+
+.grey-info-box {
+    background-color: #EAEAEA;
+    padding: 15px;
+}
+
+.spacerimg img {
+        display: none;
+    }
+
+/* Mobile Viewport: Style Rules for Buttons */
+    .button {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 15px 8px;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
 
 
 /* Style rules for footer content */
@@ -115,13 +155,18 @@ footer {
 @media screen and (min-width: 630px), print {
     
     /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
-    .tablet-desktop-nav {
+    .tablet-desktop-nav, #heroimg-tab-desk {
     display: block;
   }
 
-    .mobile, .mobile-nav {
+    .mobile, .mobile-nav, #heroimg-mobile {
     display: none;
   }
+    
+     #nav {
+        z-index: 100;
+        position: relative;
+    }
     
     /* Tablet Viewport: Style rule for header */
     header {
@@ -163,7 +208,56 @@ footer {
         display: none;
     }
     
+     /* Tablet Viewport: Style Rules for hero image and content */
+    
+    #heroimg-tab-desk {
+        position: relative;
+        padding: clear;
+        margin: clear;
+    }
+    
+    #heroimg-tab-desk p {
+        position: absolute;
+        top: 400px;
+        padding-left: 60px;
+        font-family: "DM Sans", sans-serif;
+    }
+    
+    #heroimg-tab-desk .index-btns {
+        position: absolute;
+        top: 500px;
+        padding-left: 60px;
+    }
+    
     /* Tablet Viewport: Style Rules for main content area */
+    
+     main {
+        padding: 60px 60px 80px;
+    }
+    
+        /* Mobile Viewport: Style Rules for Buttons */
+        .button {
+            font-size: 1.2em;
+        }
+    
+    .spacerimg img {
+        display: block;
+    }
+    
+    #index-who {
+        float: left;
+        width: 45%;
+    }
+    
+    #index-what {
+        float: right;
+        width: 45%;
+    }
+    
+    .grey-info-box {
+        height: 500px;
+        margin-bottom: 50px;
+    }
     
     /* Tablet Viewport: Style Rules for footer*/
     footer {
