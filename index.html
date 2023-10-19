@@ -19,8 +19,9 @@
 
 <body>
     
-    <div id="container">
+    <div id="body-container">
         
+        <div id="nav">
         <!-- Mobile Nav -->
         <nav class="mobile-nav">
             <div id="menu-links">
@@ -60,8 +61,8 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
-    
-        <!-- Hero Image -->
+        </div>
+        <!-- Tablet Desktop Hero Image -->
 		<div id="heroimg-tab-desk">
 			<img src="images/Hero_Images_index.png" alt="skyview image of Hilo, Hawaii with the text Play Your Best In The Best Places">
             <p>Collegiate team travel events for athletes by athletes.</p>
@@ -71,30 +72,38 @@
             </div>
 		</div>
         
+        <!-- Mobile Hero Image -->
+        <div id="heroimg-mobile">
+			<img src="images/Hero_Images_MobileIndex.png" alt="skyview image of Hilo, Hawaii with the text Play Your Best In The Best Places">
+        </div>
+        
         <!-- Main Content -->
         <main>
             <div id="index-who">
-            <h2>WHO WE ARE</h2>
-                <p>Here at TtitleTown, we strive to run efficient and effective youth, adult, and collegiate tournaments and programs. <br><br>
+                <h2>WHO WE ARE</h2>
+                <div class="grey-info-box">
+                    <p>Here at TtitleTown, we strive to run efficient and effective youth, adult, and collegiate tournaments and programs. <br><br>
+
+                    As of March 2023, TitleTown Events LLC took over Malika Sports Tours at Legendary Travel. Malika Sports Tours had a successful 23-year career in Hawai'i collegiate sporting events and we look forward to continuing that with you and your University. In those 23 years, Malika Sports Tours has sent teams from 44 of the 50 states to Hawai'i. Those teams have played various sports in O'ahu and on the Big Island. <br><br>
+
+                    We are excited to be in contact with you and help you reach your team's goals of playing in Hawai'i!
+
+                    </p><br><br><br>
                     
-                As of March 2023, TitleTown Events LLC took over Malika Sports Tours at Legendary Travel. Malika Sports Tours had a successful 23-year career in Hawai'i collegiate sporting events and we look forward to continuing that with you and your University. In those 23 years, Malika Sports Tours has sent teams from 44 of the 50 states to Hawai'i. Those teams have played various sports in O'ahu and on the Big Island. <br><br>
-                    
-                We are excited to be in contact with you and help you reach your team's goals of playing in Hawai'i!
-                
-                </p>
-                
+                    <a href="contact.html"><button class="button">Learn More</button></a>
+                </div>
             </div>
             
             <div id="index-what">
                 
                 <h2>WHAT WE DO</h2>
+                <div class="grey-info-box">
                 <div>
                     <h3>COLLEGIATE SPORTING EVENTS</h3>
                     <p>We run and coordinate collegiate sporting evets in Hawaii for colleges in the divisions: </p>
                     <p>D3, D2, NAIA, NCCAA</p>
                     <p>Sporting events include events for:</p>
                     <p>Basketball, Soccer, Softfall</p>
-                    <button class="button">Learn More</button>
                 </div>
                 
                 <div>
@@ -107,6 +116,7 @@
                     <h3>WORK WITH COMPANIES</h3>
                     <p>We work with individual companies to provide aid in other areas of travel, such as:</p>
                     <p>External Fan/Parent Travel, Airlines</p>
+                </div>
                 </div>
                     
             </div>
@@ -276,6 +286,7 @@
                     
             </div>
             
+            <!-- End Event Calendar -->
             
             
         </main>
