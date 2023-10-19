@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>TitleTown Events</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/cku7iak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/TTE-fav-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/TTE-fav-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/TTE-apple-touch-180.png">
+    <link rel="shortcut icon" sizes="192x192" href="images/TTE-android-chrome-192.png">
+</head>
+
+<body>
+    
+    <div id="container">
+        
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="events.html">Events</a>
+                <a href="packages.html">Packages</a>
+                <a href="activities.html">Activities</a>
+                <a href="external.html">External Companies</a>
+                <a href="testimony.html">Testimonials</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+        
+        <!-- Website Logo -->
+        <header id="TTE-logo">
+            <a href="index.html"><img src="images/TitleTownEvents-WhiteREV.png" alt="TitleTown Events Logo" height="66" width="98"></a>
+        </header>
+        
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop-nav">
+            <ul>
+                <li><a href="events.html">Events</a>
+                    <div class="eventsDropdown">
+                        <ul>
+                            <li><a href="basketball.html">Big Island Holiday Classic</a></li>
+                            <li><a href="soccer.html">Soccer Event</a></li>
+                            <li><a href="softball.html">Ulili Softball Invitational</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="external.html">External Companies</a></li>
+                <li><a href="testimony.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Main Content -->
+        <main>
+            <h2>Enter Heading Here</h2>
+            <p>Test Content</p>
+            
+            <video controls>
+            <source src="media/grady_video.mp4" type="video/mp4">
+            </video>
+            
+            <h2>Transcript</h2>
+            <p>Paragraph of Grady video for accessibility purposes</p>
+            
+            <h2>Past Big Island Classic Participants</h2>
+            <p>Content</p>
+            
+            <h2>Past Soccer Event Participants</h2>
+            <p>Content</p>
+            
+            <div id="form">
+
+				<h2>Submit your Testimonial!</h2>
+
+				<form class="form-grid">
+					<!-- Start Form -->
+
+					<fieldset>
+						<legend>Customer Information</legend>
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" required>
+
+						<label for="lName">Last Name:</label>
+						<input type="text" name="lName" id="lName" required>
+
+						<label for="tName">Team Name:</label>
+						<input type="text" name="tName" id="tName" required>
+
+						<label for="eAttend">Event Attended:</label>
+						<input type="text" id="eAttend" name="eAttend" required>
+					</fieldset>
+                    
+                    <fieldset>
+						<legend>Message</legend>
+						<p>My experience with TitleTown Events...</p>
+						<textarea id="experience" name="experience" rows="5" cols="35"></textarea>
+					</fieldset>
+                    
+                    <input type="submit" id="submit" value="Submit" class="btn">
+
+                </form>
+            </div>
+
+        </main>
+        
+        <!-- Footer Content -->
+        <footer>
+            
+            <div class="container">
+            
+                <div id="footer-logo">
+                    <a href="index.html"><img src="images/TitleTownEvents-WhiteREV.png" alt="TitleTown Events Logo" height="66" width="98"></a>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                            <ul>
+                                <li><a href="basketball.html">Big Island Holiday Classic</a></li>
+                                <li><a href="soccer.html">Soccer Event</a></li>
+                                <li><a href="softball.html">Ulili Softball Invitational</a></li>
+                            </ul>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="external.html">External Companies</a></li>
+                        <li><a href="testimony.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="container-socials-content">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/TitleTownEvents" target="_blank"><img src="images/facebook-icon.png" alt="Facebook Logo"></a>
+                        <a href="https://twitter.com/TitletownEvents" target="_blank"><img src="images/twitter-icon.png" alt="Twitter Logo"></a>
+                        <a hreft="https://www.instagram.com/titletowneventsllc/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram Logo"></a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <ul>
+                            <li><a href="tel:6608539902">(660) 853-9902</a></li>
+                            <li><a href="mailto:titletownevents@gmail.com">titletownevents@gmail.com</a></li>
+                            <li>Maryville, MO</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            
+        </footer>
+        
+    </div>
+    
+    <script src="scripts/script.js"></script>
+    
+</body>
+    
+</html>
