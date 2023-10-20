@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <title>TitleTown Events</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.typekit.net/cku7iak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,900;1,9..40,200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="48x48" href="images/TTE-fav-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/TTE-fav-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/TTE-apple-touch-180.png">
+    <link rel="shortcut icon" sizes="192x192" href="images/TTE-android-chrome-192.png">
+</head>
+
+<body>
+    
+    <div id="container">
+        
+        <!-- Mobile Nav -->
+        <nav class="mobile-nav">
+            <div id="menu-links">
+                <a href="events.html">Events</a>
+                <a href="packages.html">Packages</a>
+                <a href="activities.html">Activities</a>
+                <a href="external.html">External Companies</a>
+                <a href="testimony.html">Testimonials</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <a class="menu-icon" onclick="hamburger()">
+                <div>&#9776;</div>
+            </a>
+        </nav>
+        
+        <!-- Website Logo -->
+        <header id="TTE-logo">
+            <a href="index.html"><img src="images/TitleTownEvents-WhiteREV.png" alt="TitleTown Events Logo" height="66" width="98"></a>
+        </header>
+        
+        <!-- Tablet, Desktop Nav -->
+        <nav class="tablet-desktop-nav">
+            <ul>
+                <li><a href="events.html">Events</a>
+                    <div class="eventsDropdown">
+                        <ul>
+                            <li><a href="basketball.html">Big Island Holiday Classic</a></li>
+                            <li><a href="soccer.html">Soccer Event</a></li>
+                            <li><a href="softball.html">Ulili Softball Invitational</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="external.html">External Companies</a></li>
+                <li><a href="testimony.html">Testimonials</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Main Content -->
+        <main>
+            <h2>About Us</h2>
+            <p>Test Content</p>
+            
+            <h2>Meet the Team</h2>
+            <div class="columnfirst">
+            <img src="images/Alex%20Bean%20Picture.png" alt="Alex"/>
+            <h3>Alex Bean</h3>
+            <section>
+            <h3>Co-Owner/Teams, Transportation &#38; Lodging Coordinator</h3>
+            <p>Alex is a former NAIA/D2 college baseball athlete who has 3 years of experience working in college athletics at Northwest Missouri State University. Alex works on TitleTown Events LLC full time.</p>
+            <h4><a href="abean@titletownevents.org" class="contact-email-link">abean@titletownevents.org</a></h4>
+            </section>
+            </div>
+                
+            
+            <div class="columnsecond">
+            <img src="images/John%20Zimmerman%20Picture.png" alt="John"/>
+            <h3>John Zimmerman</h3>
+            <section>
+            <h3>Co-Owner/Activities Coordinator</h3>
+            <p>John is a former college D2 basketball athlete at William Jewel college and is currently working as a corporate accountant at Deloltte.</p>
+            <h4><a href="jzimmerman@titletownevents.org" class="contact-email-link">jzimmerman@titletownevents.org</a></h4>
+            </section>
+            </div>
+                
+            
+            <div class="columnthird">
+            <img src="images/Walker%20Graves%20Pic.png" alt="Walker"/>
+            <h3>Walker Graves</h3>  
+            <section>
+            <h3>Co-Owner/Flights &#38; Transportation Coordinator</h3>
+            <p>Walker is a former D2 college football athlete who has recently graduated from Northwest Missouri State University and is currently working as a sales representative at Ryan Transportation Service, Inc. </p>
+            <h4><a href="wgraves@titletownevents.org" class="contact-email-link">wgraves@titletownevents.org</a></h4>
+            </section>
+         </div>
+            
+        <div class="contact"> 
+        <h2>Contact Us Today!</h2>
+                <a href="https://www.facebook.com/TitleTownEvents" target="_blank"><img src="images/facebook-icon.png" alt="Facebook Logo"></a>
+                 <a href="https://twitter.com/TitletownEvents" target="_blank"><img src="images/twitter-icon.png" alt="Twitter Logo"></a>
+                 <a hreft="https://www.instagram.com/titletowneventsllc/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram Logo"></a> 
+            </div>
+            
+            <fieldset>
+						<legend>Customer Information</legend>
+						<label for="fName">First Name:</label>
+						<input type="text" name="fName" id="fName" required>
+
+						<label for="lName">Last Name:</label>
+						<input type="text" name="lName" id="lName" required>
+
+						<label for="tName">Team Name:</label>
+						<input type="text" name="tName" id="tName" required>
+
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email" required>
+                
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" required>
+					</fieldset>
+            
+            <fieldset>
+						<legend>Additional Information</legend>
+						<p>I am a(n):</p>
+
+						<label for="ath"><input type="checkbox" name="athlete" id="ath" value="Athlete">Athlete</label>
+
+						<label for="coach"><input type="checkbox" name="coach" id="coach" value="Coach/Admin">Coach/Admin</label>
+
+						<label for="parent"><input type="checkbox" name="parent" id="parent" value="Parent/External Fan">Parent/External Fan</label>
+                
+                        <p>Sports Type</p>
+                
+                        <label for="bball"><input type="checkbox" name="basketball" id="bball" value="Basketball">Basketball</label>
+                
+                        <label for="sball"><input type="checkbox" name="softball" id="sball" value="Softball">Softball</label>
+                
+                        <label for="soccer"><input type="checkbox" name="soccer" id="soccer" value="Soccer">Soccer</label>
+                
+                        <p>Division</p>
+                        
+                        <label for="d1"><input type="checkbox" name="divisionone" id="d1" value="D1">D1</label>
+                        <label for="d2"><input type="checkbox" name="d2" id="d2" value="D2">D2</label>
+                        <label for="d3"><input type="checkbox" name="d3" id="d3" value="D3">D3</label>
+                        <label for="NCCA"><input type="checkbox" name="NCCA" id="NCCA" value="NCCA">NCCA</label>
+                        <label for="NAIA"><input type="checkbox" name="NAIA" id="NAIA" value="NAIA">NAIA</label>
+                        <label for="N/A"><input type="checkbox" name="None" id="none" value="None">N/A</label>
+
+					</fieldset>
+            
+                <fieldset>
+                    <legend>Message</legend>
+                    <label for="questions">I would like more information about...</label>
+				    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+            
+                </fieldset>
+            
+                <input type="submit" id="submit" value="Submit" class="btn">
+
+        </main>
+        
+        <!-- Footer Content -->
+        <footer>
+            
+            <div class="container">
+            
+                <div id="footer-logo">
+                    <a href="index.html"><img src="images/TitleTownEvents-WhiteREV.png" alt="TitleTown Events Logo" height="66" width="98"></a>
+                </div>
+
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="events.html">Events</a></li>
+                            <ul>
+                                <li><a href="basketball.html">Big Island Holiday Classic</a></li>
+                                <li><a href="soccer.html">Soccer Event</a></li>
+                                <li><a href="softball.html">Ulili Softball Invitational</a></li>
+                            </ul>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="activities.html">Activities</a></li>
+                        <li><a href="external.html">External Companies</a></li>
+                        <li><a href="testimony.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="container-socials-content">
+                    <div class="socials">
+                        <a href="https://www.facebook.com/TitleTownEvents" target="_blank"><img src="images/facebook-icon.png" alt="Facebook Logo"></a>
+                        <a href="https://twitter.com/TitletownEvents" target="_blank"><img src="images/twitter-icon.png" alt="Twitter Logo"></a>
+                        <a hreft="https://www.instagram.com/titletowneventsllc/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram Logo"></a>
+                    </div>
+
+                    <div class="footer-contact">
+                        <ul>
+                            <li><a href="tel:6608539902">(660) 853-9902</a></li>
+                            <li><a href="mailto:titletownevents@gmail.com">titletownevents@gmail.com</a></li>
+                            <li>Maryville, MO</li>
+                        </ul>
+                    </div>
+
+                </div>
+                
+            </div>
+            
+            <p>&copy; Copyright 2023. All Rights Reserved.</p>
+            
+        </footer>
+        
+    </div>
+    
+    <script src="scripts/script.js"></script>
+    
+</body>
+    
+</html>
