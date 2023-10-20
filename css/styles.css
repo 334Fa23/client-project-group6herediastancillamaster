@@ -85,6 +85,10 @@ p {
     font-style: normal;
 }
 
+.timeline-tab-desk {
+    display: none;
+}
+
 
 /* Style rules for footer content */
 footer {
