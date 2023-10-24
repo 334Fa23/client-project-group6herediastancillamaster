@@ -107,7 +107,107 @@ p {
 
 .spacerimg img {
         display: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
+
+/* Mobile Viewport: style rules for Index.html Upcoming Events*/
+#event-calendar {
+    height: auto;
+    display: inline-grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    margin-top: 30px;
+}
+
+
+.event-cal-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cal-img {
+    object-fit: cover;
+    z-index: 0;
+}
+
+.cal-date {
+    position: absolute;
+    display: block;
+    width: 30%;
+    height: auto;
+    background-color: #014D22;
+    border-radius: 0px 10px 10px;
+    z-index: 1;
+    top: 0;
+    
+}
+.cal-date h3 {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+}
+
+.cal-title {
+    position: absolute;
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    bottom: 55px;
+    background-color: #EAEAEA;
+}
+
+.cal-title h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.cal-title p {
+    font-family: "DM Sans", sans-serif;
+    font-size: 1em;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.cal-year {
+    position: absolute;
+    z-index: 3;
+    bottom: 0px;
+    right: 0px;
+    background-color: #014D22;
+    width: 100%;
+    height: auto;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.cal-year h3 {
+    color: #fff;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* Mobile Viewport: Style rules for packages boxes */
+
+#packagelist {
+    display: inline-grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+}
+
+#packagelist h2 {
+    text-align: center;
+    height: 8%;
+}
+
+#packagelist ul {
+    font-family: "DM Sans", sans-serif;
+}
 
 /* Mobile Viewport: Style Rules for Buttons */
     .button {
@@ -127,6 +227,16 @@ p {
         border-radius: 10px;
         border: none;
     }
+
+/* Style Rules for sections */
+
+section {
+    background-color: #EAEAEA;
+    padding: 15px;
+    font-family: "DM Sans", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 /* Style rules for footer content */
 footer {
@@ -226,15 +336,17 @@ footer {
     
     #heroimg-tab-desk p {
         position: absolute;
-        top: 400px;
-        padding-left: 60px;
+        top: 55%;
+        padding-left: 5%;
+        width: 300px;
         font-family: "DM Sans", sans-serif;
     }
     
     #heroimg-tab-desk .index-btns {
         position: absolute;
-        top: 500px;
-        padding-left: 60px;
+        top: 80%;
+        padding-left: 5%;
+        font-size: .75em;
     }
     
     /* Tablet Viewport: Style Rules for main content area */
@@ -263,8 +375,28 @@ footer {
     }
     
     .grey-info-box {
-        height: 500px;
+        height: auto;
+        width: auto;
         margin-bottom: 50px;
+    }
+    
+    /* Tablet Viewport: Style rules for Index.html Upcoming Events */
+            #event-calendar {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, 1fr);
+
+            }
+    
+    /* Tablet Viewport: style rules for packages lists*/
+        #packagelist {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            column-gap: 1.5rem;
+        }
+        
+    #packagelist .grey-info-box {
+        height: 75%;
     }
     
     /* Tablet Viewport: Style Rules for footer*/
@@ -398,11 +530,37 @@ footer {
     }
 
     
+    /* Desktop Viewport: Style rules for hero image */
+    #heroimg-tab-desk p {
+        position: absolute;
+        top: 65%;
+        padding-left: 5%;
+        width: auto;
+        font-family: "DM Sans", sans-serif;
+        font-size: 1.1em;
+    }
+    
+    #heroimg-tab-desk .index-btns {
+        position: absolute;
+        top: 80%;
+        padding-left: 5%;
+        font-size: 1.2em;
+    }    
+    
+
     
     /* Desktop Viewport: Style rules for main content */
     main {
         clear: left;
     }
+    
+        /* Desktop Viewport: Style rules for Index.html Upcoming Events */
+            #event-calendar {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+            }
     
     /* Desktop Viewport: Style rules for footer */
     #footer-logo {
