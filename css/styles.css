@@ -493,6 +493,55 @@ footer {
         display: none;
     }
     
+    .events {
+        padding-bottom: 15px;
+    }
+    
+    .img-basketball {
+        float: left;
+        max-width: 32%;
+        padding-right: 30px;
+    }
+    
+    .content-basketball {
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-basketball a {
+        float: right;
+    }
+    
+    .img-softball {
+        float: right;
+        max-width: 32%;
+    }
+    
+    .content-softball {
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-softball a {
+        float: left;
+    }
+    
+    .img-soccer {
+        float:left;
+        max-width: 27%;
+        padding-right: 30px;
+    }
+    
+    .content-soccer {
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-soccer a {
+        float: right;
+        padding-right: 30px;
+    }
+    
     /* Tablet Viewport: Style Rules for footer*/
     footer {
         color: #fff;
