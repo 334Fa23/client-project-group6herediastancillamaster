@@ -309,6 +309,36 @@ p {
     padding: 20px 10px 0 10px;
 }
 
+
+/* Style Rules for payment process timeline */
+
+#paymentprocess {
+    display: inline-grid;
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+    height: auto;
+    width: 100%;
+}
+
+.payment-steps section {
+    background-color: #014D22;
+}
+
+.payment-steps section p {
+    color: #fff;
+}
+
+.payment-steps section h3 {
+    color: #fff;
+}
+
+.payment-numbers h4 {
+        margin: 20px 40%;
+        display: block;
+        justify-items: center;
+    }
+
+
 /* Style Rules for sections */
 
 section {
@@ -317,6 +347,21 @@ section {
     font-family: "DM Sans", sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+/* Style Rule for packages tanbox */
+
+#tanbox {
+    background-color: #B4965C;
+    padding: 2%;
+}
+
+#tanbox h2 {
+    color: #fff;
+}
+
+.resource-btns {
+    vertical-align: right;
 }
 
 /* Style rules for footer content */
@@ -478,6 +523,18 @@ footer {
         
     #packagelist .grey-info-box {
         height: 75%;
+    }
+    
+    /* Tablet Viewport: payment process list */
+    
+    #paymentprocess {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    }
+    
+    .payment-steps section {
+        height: 175px;
     }
     
     /* Hide mobile timeline, show tablet-desktop */
@@ -704,6 +761,14 @@ footer {
                 grid-template-rows: repeat(2, 1fr);
 
             }
+    
+        /* Desktop Viewport: Style rules for payment process list */
+    #paymentprocess {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    
     
     /* Desktop Viewport: Style rules for footer */
     #footer-logo {
