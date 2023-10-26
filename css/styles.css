@@ -23,6 +23,7 @@ img, video {
 
 
 /* Style Rules for Mobile Viewport */
+
 /* Style Rules for Header */
 header {
     top: 0;
@@ -135,12 +136,6 @@ p {
     background-color: #EAEAEA;
     padding: 15px;
 }
-
-.spacerimg img {
-        display: none;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
 
 .externalone {
     margin-left: auto;
@@ -265,6 +260,7 @@ p {
 
 #packagelist {
     display: inline-grid;
+    width: 100%;
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
 }
@@ -288,6 +284,7 @@ p {
         border: none;
         padding: 8px 15px 8px;
         cursor: pointer;
+        text-decoration: none;
     }
     
     .button:hover {
@@ -330,6 +327,7 @@ p {
 
 .payment-steps section h3 {
     color: #fff;
+    text-align: center;
 }
 
 .payment-numbers h4 {
@@ -338,6 +336,27 @@ p {
         justify-items: center;
     }
 
+.spacerimg {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.spacerimg img {
+        display: none;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+.spacerimg .button {
+    margin-top: 10%;
+    text-decoration: none;
+}
+
+.lodging {
+    margin: 50px 0px;
+}
 
 /* Style Rules for sections */
 
@@ -353,16 +372,175 @@ section {
 
 #tanbox {
     background-color: #B4965C;
-    padding: 2%;
+    padding: 1% 2%;
+    display: inline-block;
+    width: 96%;
+    margin: 45px 0;
 }
 
-#tanbox h2 {
+#tanbox h2, #tanbox h3 {
+    color: #fff;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    text-align: center;
+}
+
+#tanbox p {
     color: #fff;
 }
 
-.resource-btns {
-    vertical-align: right;
+#tanbox .button {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 15px;
 }
+
+ #tanbox .parent-transport .button {
+        margin: 0 31% 20px;
+    }
+
+.resource-btns .button {
+    display: block;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.resource-btns a {
+     text-decoration: none;
+}
+
+.resource-btns {
+    width: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/* Packages content */
+
+ .lodging-grid1, .lodging-grid2, .lodging-grid3, .transport-grid {
+    display: inline-grid;
+    grid-template-rows: 100px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: auto;
+     
+}
+
+.ohana-hotel-img, .transport-car, .marriot-hotel-img, .hilo-hotel-img {
+    grid-row: 1;
+    overflow: hidden;
+    
+}
+
+.ohana-hotel-img img {
+  transform: translateY(-18%); 
+}
+
+.transport-car img {
+    transform: translateY(-40%);
+}
+
+.hilo-hotel-img img {
+  transform: translateY(-30%);
+}
+
+.ohana-hotel-content, .transport, .marriot-hotel-content, .hilo-hotel-content {
+    grid-row: 2/3;
+    height: auto;
+}
+
+/* activities content */
+
+.activities-vid {
+    width: 70%;
+    height: auto;
+    margin: 25px 15% 45px;
+}
+
+.activites-grid1, .activites-grid2, .activites-grid3, .activites-grid4 {
+    display: inline-grid;
+    grid-template-rows: 100px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: auto;
+     
+}
+
+.diamond-img, .lighthouse-img, .arizona-img, .luau-img {
+    grid-row: 1;
+    overflow: hidden;
+   
+}
+
+.diamond-img img {
+    transform: translateY(-30%); 
+}
+
+.lighthouse-img img {
+    transform: translateY(-30%); 
+}
+
+.arizona-img img {
+    transform: translateY(-18%); 
+}
+
+
+.diamond-content, .lighthouse-content, .arizona-content, .luau-content {
+    grid-row: 2/3;
+    height: auto;
+}
+
+
+
+/* Events */
+
+.img-basketball {
+        float: left;
+        max-width: 32%;
+        padding-right: 30px;
+    }
+    
+    .content-basketball {
+        padding-right: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-basketball a {
+        float: right;
+    }
+    
+    .img-softball {
+        float: right;
+        max-width: 32%;
+    }
+    
+    .content-softball {
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-softball a {
+        float: left;
+    }
+    
+    .img-soccer {
+        float:left;
+        max-width: 27%;
+        padding-right: 30px;
+    }
+    
+    .content-soccer {
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+    
+    .content-soccer a {
+        float: right;
+        padding-right: 30px;
+    }
 
 /* Style rules for footer content */
 footer {
@@ -481,14 +659,32 @@ footer {
         padding: 60px 60px 80px;
     }
     
-        /* Mobile Viewport: Style Rules for Buttons */
+        /* Tablet Viewport: Style Rules for Buttons */
         .button {
             font-size: 1.2em;
         }
     
-    .spacerimg img {
-        display: block;
-    }
+        .spacerimg {
+           position: relative;
+            width: 100%;
+            padding: 0;
+        }
+
+        .spacerimg img {
+            display: block;
+            width: 100%;
+            height: 100px;
+        }
+
+        .spacerimg .button {
+            position: absolute;
+            text-decoration: none;
+            left: 35%;
+            right: 35%;
+            width: auto;
+            margin: 3% auto;
+        }
+    
     
     #index-who {
         float: left;
@@ -517,14 +713,17 @@ footer {
     /* Tablet Viewport: style rules for packages lists*/
         #packagelist {
             display: grid;
-            grid-template-columns: auto auto auto;
-            column-gap: 1.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 1rem;
+            width: 100%;
         }
         
-    #packagelist .grey-info-box {
-        height: 75%;
-    }
+        #packagelist .grey-info-box {
+            height: 75%;
+
+        }
     
+
     /* Tablet Viewport: payment process list */
     
     #paymentprocess {
@@ -536,6 +735,83 @@ footer {
     .payment-steps section {
         height: 175px;
     }
+    
+    #tanbox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    }
+    
+    #tanbox h2, #tanbox h3 {
+    text-align: left;
+    color: #fff;
+    top: 30%;
+    bottom: 30%;
+    width: 40%;
+    }
+    
+    #tanbox h2 {
+        top: auto;
+        bottom: auto;
+        width: 100%;
+        column-span: all;
+    }
+    
+    #tanbox .parent-activity {
+        grid-column: 1;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+    
+    #tanbox .parent-transport {
+        grid-column: 2;
+        margin-bottom: 25px;
+        margin-top: 0;
+    }
+    
+    #tanbox .parent-transport .button {
+        margin: 0;
+        float: right;
+    }
+    
+    
+    .resource-btns .button {
+    display: block;
+    width: 70%;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+
+    .resource-btns a {
+         text-decoration: none;
+    }
+
+    .resource-btns {
+        width: auto;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    
+    .lodging-grid1, .lodging-grid2, .lodging-grid3, .transport-grid {
+        grid-template-rows: 300px auto auto;
+    }
+    
+    .activites-grid1, .activites-grid2, .activites-grid3 {
+        grid-template-rows: 300px auto auto;
+    }
+    
+    .activites-grid4 {
+        grid-template-rows: auto auto auto;
+    }
+ 
+    .diamond-img img, .lighthouse-img img, .arizona-img img, .luau-img img {
+        transform: none;
+    }
+    
     
     /* Hide mobile timeline, show tablet-desktop */
     .timeline-mobile {
@@ -598,6 +874,9 @@ footer {
         float: right;
         padding-right: 30px;
     }
+    
+    
+    /
     
     /* Tablet Viewport: Style Rules for footer*/
     footer {
@@ -768,6 +1047,188 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
+    
+    
+    /* Desktop Viewport: Packges content */
+    
+.lodging-grid1 {
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.marriot-hotel-content {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.marriot-hotel-img {
+    grid-column: 1;
+    grid-row: auto;
+    overflow: visible;
+}
+
+.lodging-grid2 {
+    display: grid;
+    grid-template-columns: auto auto 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.ohana-hotel-content {
+    grid-column: 1/2;
+    grid-row: auto;
+}
+
+.ohana-hotel-img {
+    grid-column: 3;
+    grid-row: auto;
+    overflow: visible;
+}
+
+.lodging-grid3 {
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.hilo-hotel-content {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.hilo-hotel-img {
+    grid-column: 1;
+    grid-row: auto;
+    overflow: visible;
+}
+
+.transport-grid {
+    display: grid;
+    grid-template-columns: auto auto 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.transport {
+    grid-column: 1/2;
+    grid-row: auto;
+}
+
+.transport-car {
+    grid-column: 3;
+    grid-row: auto;
+    overflow: visible;
+}
+    
+    .ohana-hotel-img img, .transport-car img, .hilo-hotel-img img {
+        transform: none;
+    }
+    
+    
+/* Desktop Viewport: Activities content */
+
+.activites-grid1 {
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.diamond-content {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.diamond-img {
+    grid-column: 1;
+    grid-row: auto;
+    height: auto;
+    overflow: visible;
+}
+
+.activites-grid2 {
+    display: grid;
+    grid-template-columns: auto auto 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.lighthouse-content {
+    grid-column: 1/2;
+    grid-row: auto;
+}
+
+.lighthouse-img {
+    grid-column: 3;
+    height: auto;
+    grid-row: auto;
+    overflow: visible;
+}
+
+.activites-grid3 {
+    display: grid;
+    grid-template-columns: 30% auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.arizona-content {
+    grid-column: 2/3;
+    grid-row: auto;
+}
+
+.arizona-img {
+    grid-column: 1;
+    height: auto;
+    grid-row: auto;
+    overflow: visible;
+}
+
+.activites-grid4 {
+    display: grid;
+    grid-template-columns: auto auto 30%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.luau-content {
+    grid-column: 1/2;
+    grid-row: auto;
+}
+
+.luau-img {
+    grid-column: 3;
+    grid-row: auto;
+    height: auto;
+    overflow: visible;
+}
     
     
     /* Desktop Viewport: Style rules for footer */
