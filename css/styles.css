@@ -99,13 +99,38 @@ h4 {
 }
 
 .externalh4 {
+    background-color: transparent;
     color: #fff;
     text-align: center;
     font-size: 1em;
     border: none;
     padding: 3px 20px;
     display: inline-block;
-    margin: 15px 0 15px 60px;
+    margin: 15px 0 15px 50px;
+}
+
+.contacth4 {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    right: 120px;
+    top: 50px;
+}
+
+.contacth4john {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    right: 120px;
+    top: 110px;
 }
 
 h5 {
@@ -122,6 +147,11 @@ p {
     font-weight: 400;
     font-style: normal;
 }
+
+.sectioncontact {
+    height: 300px;
+}
+
 
 .timeline-tab-desk {
     display: none;
@@ -149,7 +179,7 @@ p {
     max-width: 33%;
     max-height: 33%;
     position: relative;
-    bottom: 100px;
+    bottom: 110px;
 }
 
 .externaltwo {
@@ -166,7 +196,7 @@ p {
     max-width: 3%;
     position: relative;
     float: left;
-    left: 235px;
+    left: 280px;
     top: 10px;
 }
 
@@ -175,10 +205,130 @@ p {
     max-width: 3%;
     position: relative;
     float: left;
-    left: 55px;
+    left: 100px;
     top: 10px;
 }
 
+.iconmailone {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 460px;
+    top: 15px; 
+}
+
+.iconmailtwo {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 280px;
+    top: 15px; 
+}
+
+.columnfirst {
+  float: left;
+  width: 31.33%;
+  padding-left: .5%;
+  height: 360px;
+}
+
+.columnfirst img {
+    width:80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnsecond {
+  float: left;
+  width: 31.33%;
+  padding-left: 1.5%;
+  height: 360px;
+}
+
+.columnsecond img {
+    width:80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnthird {
+  float: left;
+  width: 31.33%;
+  padding-left: 1.5%;
+  height: 360px;
+}
+
+.columnthird img {
+    width:80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+form {
+    width: auto;
+    border: 2px #014D22;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #014D22;
+    border: 2px #014D22;
+}
+label {
+    display: block;
+    padding: 1%;
+    color: green;
+    font-size: 1.25em;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+.labeldivision {
+    display: inline-block;
+}
+
+/* Testimony Page */ 
+
+.testimony-vid {
+    width: 70%;
+    height: auto;
+    margin: 25px 15% 45px;
+}
+
+.testimonyimg {
+    max-width: 10%;
+    max-height: 8%;
+    display: inline-block;
+    padding: 1%;
+    position: relative;
+    left: 250px;
+}
+.testimonyimg2 {
+    max-width: 10%;
+    max-height: 10%;
+    display: inline-block;
+    padding: 3%;
+    position: relative;
+    left: 400px;
+}
+
+.pastparticipants {
+    background-color: #EAEAEA;
+
+}
 
 /* Mobile Viewport: style rules for Index.html Upcoming Events*/
 #event-calendar {
@@ -776,6 +926,9 @@ footer {
         float: right;
     }
     
+    #tanbox .contactpage {
+        position: relative;
+    }
     
     .resource-btns .button {
     display: block;
