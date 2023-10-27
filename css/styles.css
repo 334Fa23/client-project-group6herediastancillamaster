@@ -716,18 +716,20 @@ section {
     margin-bottom: -20px;
 }
 
+.container-basketball-teams, .container-softball-teams, .container-soccer-teams {
+    display: block;
+    margin-left: 80px;
+    margin-bottom: -30px;
+}
+
 .committed-teams {
     padding-top: 15px;
 }
 
-.committed-teams-img {
-    margin-left: 80px;
-    max-width: 100px;
-    margin-bottom: -30px;
-}
-
-.committed-teams-img img {
-    padding-bottom: 30px;
+.container-basketball-teams img, .container-softball-teams img, .container-soccer-teams img {
+    max-width: 50%;
+    padding-bottom: 15px;
+    align-content: center;
 }
 
 /* Style rules for footer content */
