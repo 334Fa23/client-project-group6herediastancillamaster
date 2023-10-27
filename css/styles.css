@@ -109,7 +109,7 @@ h4 {
     margin: 15px 0 15px 50px;
 }
 
-.contacth4 {
+.contacth4alex {
     color: #fff;
     text-align: center;
     font-size: 1em;
@@ -118,7 +118,19 @@ h4 {
     display: inline-block;
     position: relative;
     right: 120px;
-    top: 50px;
+    top: 33px;
+}
+
+.contacth4walker {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    position: relative;
+    right: 120px;
+    top: 30px;
 }
 
 .contacth4john {
@@ -130,7 +142,7 @@ h4 {
     display: inline-block;
     position: relative;
     right: 120px;
-    top: 110px;
+    top: 95px;
 }
 
 h5 {
@@ -272,6 +284,33 @@ p {
     display: block;
 }
 
+.iconmailcontactalex {
+    max-height: 6%;
+    max-width: 6%;
+    position: relative;
+    float: left;
+    left: 380px;
+    top: 60px; 
+}
+
+.iconmailcontactjohn {
+    max-height: 6%;
+    max-width: 6%;
+    position: relative;
+    float: left;
+    right: 370px;
+    top: 120px; 
+}
+
+.iconmailcontactwalker {
+    max-height: 6%;
+    max-width: 6%;
+    position: relative;
+    float: left;
+    right: 1px;
+    top: 60px; 
+}
+
 form {
     width: auto;
     border: 2px #014D22;
@@ -299,6 +338,32 @@ label {
 .labeldivision {
     display: inline-block;
 }
+
+.messageform {
+    height: 175px;
+}
+
+.buttoncontact {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        left: 800px;
+        bottom: 200px;
+    }
+    
+    .buttoncontact:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
 
 /* Testimony Page */ 
 
