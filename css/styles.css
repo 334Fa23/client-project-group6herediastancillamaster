@@ -718,12 +718,13 @@ section {
 
 .container-basketball-teams, .container-softball-teams, .container-soccer-teams {
     display: block;
-    margin-left: 80px;
     margin-bottom: -30px;
+    width: 100%;
 }
 
 .committed-teams {
     padding-top: 15px;
+    width: 100%;
 }
 
 .container-basketball-teams img, .container-softball-teams img, .container-soccer-teams img {
