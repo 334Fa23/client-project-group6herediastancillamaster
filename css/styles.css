@@ -81,6 +81,10 @@ h2 {
     font-family: "DM Sans", sans-serif;
 }
 
+.contacth2 {
+    color: #fff;
+}
+
 h3 {
     color: #014D22;
     font-family: "DM Sans", sans-serif;
@@ -104,9 +108,19 @@ h4 {
     text-align: center;
     font-size: 1em;
     border: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.externalh4logos {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
     padding: 3px 20px;
     display: inline-block;
-    margin: 15px 0 15px 50px;
+    margin: 0px 0 15px 0px;
 }
 
 .contacth4alex {
@@ -311,9 +325,19 @@ p {
     top: 60px; 
 }
 
-form {
+#formtestimony {
+    width: auto;
+    background-color: #EAEAEA;
+    border: 2px #014D22;
+    position: relative;
+}
+
+formcontact {
     width: auto;
     border: 2px #014D22;
+    background-color: #EAEAEA;
+    position: relative;
+    margin-bottom: 100px;
 }
 
 fieldset legend {
@@ -341,6 +365,19 @@ label {
 
 .messageform {
     height: 175px;
+}
+
+.containertan {
+    background-color: #B4965C;
+    padding: 0%;
+    display: inline-block;
+    width: 96%;
+    margin: 250px 0px;
+}
+
+.iconcontacttan {
+    display: inline-block;
+    padding-left: 3%;
 }
 
 .buttoncontact {
@@ -379,21 +416,46 @@ label {
     display: inline-block;
     padding: 1%;
     position: relative;
-    left: 250px;
+    right: 200px;
 }
+
+
 .testimonyimg2 {
     max-width: 10%;
     max-height: 10%;
     display: inline-block;
     padding: 3%;
     position: relative;
-    left: 400px;
+    right: 400px;
 }
 
 .pastparticipants {
     background-color: #EAEAEA;
 
 }
+
+.buttontestimonial {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        height: 50px;
+        position: relative;
+        top: 180px;
+        left: 5px;
+    }
+    
+    .buttontestimonial:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
 
 /* Mobile Viewport: style rules for Index.html Upcoming Events*/
 #event-calendar {
@@ -795,7 +857,7 @@ footer {
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
+@media screen and (min-width: 627px), print {
     
     /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
     .tablet-desktop-nav, #heroimg-tab-desk {
@@ -939,6 +1001,48 @@ footer {
 
         }
     
+    /*Tablet Viewport: Testimony page */
+    
+      .testimonyimg {
+        position: relative;
+        left: 145px;
+    }
+    
+    .testimonyimg2 {
+        position: relative;
+        left: 180px;
+    }
+    
+    .buttontestimonial {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        height: 30px;
+        position: relative;
+        top: 223px;
+        right: 110px;
+        width: auto;
+    }
+    
+    .buttontestimonial:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    form {
+    width: 100%;
+    border: 2px #014D22;
+    background-color: #EAEAEA;
+}
+
 
     /* Tablet Viewport: payment process list */
     
