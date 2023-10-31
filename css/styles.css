@@ -1,5 +1,9 @@
 /* CSS Reset */
-body, header, nav, main, footer {
+body,
+header,
+nav,
+main,
+footer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -13,12 +17,13 @@ html {
 
 /* Style Rules for body and images */
 body {
-    background: #014D22;   
+    background: #014D22;
 }
 
-img, video {
-  max-width: 100%;
-  display: block;
+img,
+video {
+    max-width: 100%;
+    display: block;
 }
 
 
@@ -62,11 +67,14 @@ header img {
 }
 
 /* Show Mobile class, hide tablet-desktop class and menu-links id */
-.mobile, #heroimg-mobile {
+.mobile,
+#heroimg-mobile {
     display: block;
 }
 
-.tablet-desktop-nav, #menu-links, #heroimg-tab-desk {
+.tablet-desktop-nav,
+#menu-links,
+#heroimg-tab-desk {
     display: none;
 }
 
@@ -79,6 +87,10 @@ main {
 h2 {
     color: #B4965C;
     font-family: "DM Sans", sans-serif;
+}
+
+.contacth2 {
+    color: #fff;
 }
 
 h3 {
@@ -98,7 +110,73 @@ h4 {
     margin: 20px 0 20px 100px;
 }
 
+
+h5 {
+    color: #014D22;
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: "aileron", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sectioncontact {
+    height: 300px;
+}
+
+#index-who {
+    float: left;
+    display: block;
+    margin-bottom: 10%;
+}
+
+#index-who .button {
+    margin-bottom: 40px;
+}
+
+.grey-info-box {
+    background-color: #EAEAEA;
+    padding: 15px;
+}
+
+/* Start External Page*/
+
+.externalone {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 33%;
+    max-height: 33%;
+    position: relative;
+    bottom: 110px;
+}
+
+.externaltwo {
+    display: block;
+    max-width: 32%;
+    max-height: 30%;
+    position: relative;
+    float: right;
+    bottom: 190px;
+}
+
 .externalh4 {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.externalh4logos {
     background-color: transparent;
     color: #fff;
     text-align: center;
@@ -106,7 +184,158 @@ h4 {
     border: none;
     padding: 3px 20px;
     display: inline-block;
-    margin: 15px 0 15px 50px;
+    margin: 0px 0 15px 0px;
+}
+
+.iconphoneone {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 280px;
+    top: 10px;
+}
+
+.iconphonetwo {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 100px;
+    top: 10px;
+}
+
+.iconmailone {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 460px;
+    top: 15px;
+}
+
+.iconmailtwo {
+    max-height: 3%;
+    max-width: 3%;
+    position: relative;
+    float: left;
+    left: 280px;
+    top: 15px;
+}
+
+/* End External Page */
+
+
+/* Start Testimony Page */
+
+.testimony-vid {
+    width: 70%;
+    height: auto;
+    margin: 25px 15% 45px;
+}
+
+.testimonyimg {
+    max-width: 10%;
+    max-height: 8%;
+    display: inline-block;
+    padding: 1%;
+}
+
+
+.testimonyimg2 {
+    max-width: 10%;
+    max-height: 10%;
+    display: inline-block;
+    padding: 3%;
+    position: relative;
+    right: 400px;
+}
+
+.pastparticipants {
+    background-color: #EAEAEA;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.buttontestimonial {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 50px;
+    position: relative;
+    top: 180px;
+    left: 5px;
+}
+
+.buttontestimonial:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+#formtestimony {
+    width: auto;
+    background-color: #EAEAEA;
+    border: 2px #014D22;
+    position: relative;
+}
+
+/* End Testimony */
+
+
+/* Contact Page */
+
+.columnfirst {
+    float: left;
+    width: 31.33%;
+    padding-left: .5%;
+    height: 360px;
+}
+
+.columnfirst img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnsecond {
+    float: left;
+    width: 31.33%;
+    padding-left: 1.5%;
+    height: 360px;
+}
+
+.columnsecond img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnthird {
+    float: left;
+    width: 31.33%;
+    padding-left: 1.5%;
+    height: 360px;
+}
+
+.columnthird img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .contacth4alex {
@@ -145,147 +374,13 @@ h4 {
     top: 95px;
 }
 
-h5 {
-    color: #014D22;
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    text-align: center;
-    margin: 0;
-}
-
-p {
-    font-family: "aileron", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.sectioncontact {
-    height: 300px;
-}
-
-#index-who {
-    float: left;
-    display: block;
-    margin-bottom: 10%;
-}
-
-#index-who .button {
-    margin-bottom: 40px;
-}
-
-.grey-info-box {
-    background-color: #EAEAEA;
-    padding: 15px;
-}
-
-.externalone {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    max-width: 33%;
-    max-height: 33%;
-    position: relative;
-    bottom: 110px;
-}
-
-.externaltwo {
-    display: block;
-    max-width: 32%;
-    max-height: 30%;
-    position: relative;
-    float: right;
-    bottom: 190px;
-}
-
-.iconphoneone {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 280px;
-    top: 10px;
-}
-
-.iconphonetwo {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 100px;
-    top: 10px;
-}
-
-.iconmailone {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 460px;
-    top: 15px; 
-}
-
-.iconmailtwo {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 280px;
-    top: 15px; 
-}
-
-.columnfirst {
-  float: left;
-  width: 31.33%;
-  padding-left: .5%;
-  height: 360px;
-}
-
-.columnfirst img {
-    width:80%;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.columnsecond {
-  float: left;
-  width: 31.33%;
-  padding-left: 1.5%;
-  height: 360px;
-}
-
-.columnsecond img {
-    width:80%;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-.columnthird {
-  float: left;
-  width: 31.33%;
-  padding-left: 1.5%;
-  height: 360px;
-}
-
-.columnthird img {
-    width:80%;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
 .iconmailcontactalex {
     max-height: 6%;
     max-width: 6%;
     position: relative;
     float: left;
     left: 380px;
-    top: 60px; 
+    top: 60px;
 }
 
 .iconmailcontactjohn {
@@ -294,7 +389,7 @@ p {
     position: relative;
     float: left;
     right: 370px;
-    top: 120px; 
+    top: 120px;
 }
 
 .iconmailcontactwalker {
@@ -303,13 +398,55 @@ p {
     position: relative;
     float: left;
     right: 1px;
-    top: 60px; 
+    top: 60px;
 }
 
-form {
+.containertan {
+    background-color: #B4965C;
+    padding: 0%;
+    display: inline-block;
+    width: 96%;
+    margin: 250px 0px;
+}
+
+.iconcontacttan {
+    display: inline-block;
+    padding-left: 3%;
+}
+
+formcontact {
     width: auto;
     border: 2px #014D22;
+    background-color: #EAEAEA;
+    position: relative;
+    margin-bottom: 100px;
 }
+
+.buttoncontact {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+}
+
+.buttoncontact:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* End Contact Page */
+
 
 fieldset legend {
     font-weight: bold;
@@ -317,6 +454,7 @@ fieldset legend {
     color: #014D22;
     border: 2px #014D22;
 }
+
 label {
     display: block;
     padding: 1%;
@@ -336,58 +474,6 @@ label {
 
 .messageform {
     height: 175px;
-}
-
-.buttoncontact {
-        font-family: "DM Sans", sans-serif;
-        font-size: .8em;
-        color: #fff;
-        background-color: #22A858;
-        border-radius: 10px;
-        border: none;
-        padding: 8px 15px 8px;
-        cursor: pointer;
-        text-decoration: none;
-        position: relative;
-        left: 800px;
-        bottom: 200px;
-    }
-    
-    .buttoncontact:hover {
-        background-color: #014D22;
-        color: #fff;
-        border-radius: 10px;
-        border: none;
-    }
-
-/* Testimony Page */ 
-
-.testimony-vid {
-    width: 70%;
-    height: auto;
-    margin: 25px 15% 45px;
-}
-
-.testimonyimg {
-    max-width: 10%;
-    max-height: 8%;
-    display: inline-block;
-    padding: 1%;
-    position: relative;
-    left: 250px;
-}
-.testimonyimg2 {
-    max-width: 10%;
-    max-height: 10%;
-    display: inline-block;
-    padding: 3%;
-    position: relative;
-    left: 400px;
-}
-
-.pastparticipants {
-    background-color: #EAEAEA;
-
 }
 
 /* Mobile Viewport: style rules for Index.html Upcoming Events*/
@@ -420,8 +506,9 @@ label {
     border-radius: 0px 10px 10px;
     z-index: 1;
     top: 0;
-    
+
 }
+
 .cal-date h3 {
     font-family: "DM Sans", sans-serif;
     font-size: 1.2em;
@@ -490,24 +577,24 @@ label {
 }
 
 /* Mobile Viewport: Style Rules for Buttons */
-    .button {
-        font-family: "DM Sans", sans-serif;
-        font-size: .8em;
-        color: #fff;
-        background-color: #22A858;
-        border-radius: 10px;
-        border: none;
-        padding: 8px 15px 8px;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    
-    .button:hover {
-        background-color: #014D22;
-        color: #fff;
-        border-radius: 10px;
-        border: none;
-    }
+.button {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
 
 /* Style Rules for payment process timeline */
 
@@ -533,10 +620,10 @@ label {
 }
 
 .payment-numbers h4 {
-        margin: 20px 40%;
-        display: block;
-        justify-items: center;
-    }
+    margin: 20px 40%;
+    display: block;
+    justify-items: center;
+}
 
 .spacerimg {
     width: 100%;
@@ -545,10 +632,10 @@ label {
 }
 
 .spacerimg img {
-        display: none;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 .spacerimg .button {
     margin-top: 10%;
@@ -579,7 +666,8 @@ section {
     margin: 45px 0;
 }
 
-#tanbox h2, #tanbox h3 {
+#tanbox h2,
+#tanbox h3 {
     color: #fff;
     margin-top: 7%;
     margin-bottom: 7%;
@@ -596,9 +684,9 @@ section {
     margin-bottom: 15px;
 }
 
- #tanbox .parent-transport .button {
-        margin: 0 31% 20px;
-    }
+#tanbox .parent-transport .button {
+    margin: 0 31% 20px;
+}
 
 .resource-btns .button {
     display: block;
@@ -610,7 +698,7 @@ section {
 }
 
 .resource-btns a {
-     text-decoration: none;
+    text-decoration: none;
 }
 
 .resource-btns {
@@ -621,23 +709,29 @@ section {
 
 /* Packages content */
 
- .lodging-grid1, .lodging-grid2, .lodging-grid3, .transport-grid {
+.lodging-grid1,
+.lodging-grid2,
+.lodging-grid3,
+.transport-grid {
     display: inline-grid;
     grid-template-rows: 100px auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     height: auto;
-     
+
 }
 
-.ohana-hotel-img, .transport-car, .marriot-hotel-img, .hilo-hotel-img {
+.ohana-hotel-img,
+.transport-car,
+.marriot-hotel-img,
+.hilo-hotel-img {
     grid-row: 1;
     overflow: hidden;
-    
+
 }
 
 .ohana-hotel-img img {
-  transform: translateY(-18%); 
+    transform: translateY(-18%);
 }
 
 .transport-car img {
@@ -645,10 +739,13 @@ section {
 }
 
 .hilo-hotel-img img {
-  transform: translateY(-30%);
+    transform: translateY(-30%);
 }
 
-.ohana-hotel-content, .transport, .marriot-hotel-content, .hilo-hotel-content {
+.ohana-hotel-content,
+.transport,
+.marriot-hotel-content,
+.hilo-hotel-content {
     grid-row: 2/3;
     height: auto;
 }
@@ -661,35 +758,44 @@ section {
     margin: 25px 15% 45px;
 }
 
-.activites-grid1, .activites-grid2, .activites-grid3, .activites-grid4 {
+.activites-grid1,
+.activites-grid2,
+.activites-grid3,
+.activites-grid4 {
     display: inline-grid;
     grid-template-rows: 100px auto auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     height: auto;
-     
+
 }
 
-.diamond-img, .lighthouse-img, .arizona-img, .luau-img {
+.diamond-img,
+.lighthouse-img,
+.arizona-img,
+.luau-img {
     grid-row: 1;
     overflow: hidden;
-   
+
 }
 
 .diamond-img img {
-    transform: translateY(-30%); 
+    transform: translateY(-30%);
 }
 
 .lighthouse-img img {
-    transform: translateY(-30%); 
+    transform: translateY(-30%);
 }
 
 .arizona-img img {
-    transform: translateY(-18%); 
+    transform: translateY(-18%);
 }
 
 
-.diamond-content, .lighthouse-content, .arizona-content, .luau-content {
+.diamond-content,
+.lighthouse-content,
+.arizona-content,
+.luau-content {
     grid-row: 2/3;
     height: auto;
 }
@@ -716,7 +822,9 @@ section {
     margin-bottom: -20px;
 }
 
-.container-basketball-teams, .container-softball-teams, .container-soccer-teams {
+.container-basketball-teams,
+.container-softball-teams,
+.container-soccer-teams {
     display: block;
     margin-bottom: -30px;
     width: 100%;
@@ -727,7 +835,9 @@ section {
     width: 100%;
 }
 
-.container-basketball-teams img, .container-softball-teams img, .container-soccer-teams img {
+.container-basketball-teams img,
+.container-softball-teams img,
+.container-soccer-teams img {
     max-width: 50%;
     padding-bottom: 15px;
     align-content: center;
@@ -740,6 +850,7 @@ footer {
     color: #fff;
     font-size: 0.65em;
 }
+
 .footer-contact {
     display: block;
     font-family: "DM Sans", sans-serif;
@@ -762,73 +873,78 @@ footer {
 }
 
 /* Hide footer navigation and logo for mobile viewport */
-.footer-nav, #footer-logo {
+.footer-nav,
+#footer-logo {
     display: none;
 }
 
 /* Media Query for Tablet Viewport */
-@media screen and (min-width: 630px), print {
-    
-    /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
-    .tablet-desktop-nav, #heroimg-tab-desk {
-    display: block;
-  }
+@media screen and (min-width: 627px),
+print {
 
-    .mobile, .mobile-nav, #heroimg-mobile {
-    display: none;
-  }
-    
+    /* Tablet Viewport: Show tablet-dektop-nav class, hide mobile class */
+    .tablet-desktop-nav,
+    #heroimg-tab-desk {
+        display: block;
+    }
+
+    .mobile,
+    .mobile-nav,
+    #heroimg-mobile {
+        display: none;
+    }
+
     /* Tablet Viewport: Style rule for header */
     header {
         padding-top: 1%;
         padding-bottom: 2%;
     }
-    
+
     /* Tablet Viewport: Style rules for nav area */
     .tablet-desktop-nav {
         padding: 1%;
         margin-bottom: 1%;
     }
-    
+
     .tablet-desktop-nav ul {
         list-style-type: none;
         text-align: center;
     }
-    
+
     .tablet-desktop-nav li {
         font-family: "DM Sans", sans-serif;
         font-size: 1.25em;
         display: inline-block;
         border-right: 1px solid #fff;
     }
-    
+
     .tablet-desktop-nav li:last-child {
         border-right: none;
     }
-    
+
     .tablet-desktop-nav li a {
         padding: 0.1em 0.75em;
         display: block;
         color: #fff;
         text-decoration: none;
     }
-    
-      #nav {
+
+    #nav {
         z-index: 100;
         position: relative;
     }
-    
+
     /* Hide Events sub nav on Tablet */
     .eventsDropdown {
         display: none;
     }
-    
+
     /* Tablet Viewport: Style Rules for hero image and content */
-    
+
     #heroimg-tab-desk {
         position: relative;
     }
-    
+
     #heroimg-tab-desk p {
         position: absolute;
         top: 55%;
@@ -836,148 +952,191 @@ footer {
         width: 300px;
         font-family: "DM Sans", sans-serif;
     }
-    
+
     #heroimg-tab-desk .index-btns {
         position: absolute;
         top: 80%;
         padding-left: 5%;
         font-size: .75em;
     }
-    
+
     /* Tablet Viewport: Style Rules for main content area */
-    
-      main {
+
+    main {
         padding: 60px 60px 80px;
     }
-    
-        /* Tablet Viewport: Style Rules for Buttons */
-        .button {
-            font-size: 1.2em;
-        }
-    
-        .spacerimg {
-           position: relative;
-            width: 100%;
-            padding: 0;
-        }
 
-        .spacerimg img {
-            display: block;
-            width: 100%;
-            height: 100px;
-        }
+    /* Tablet Viewport: Style Rules for Buttons */
+    .button {
+        font-size: 1.2em;
+    }
 
-        .spacerimg .button {
-            position: absolute;
-            text-decoration: none;
-            left: 35%;
-            right: 35%;
-            width: auto;
-            margin: 3% auto;
-        }
-    
-    
+    .spacerimg {
+        position: relative;
+        width: 100%;
+        padding: 0;
+    }
+
+    .spacerimg img {
+        display: block;
+        width: 100%;
+        height: 100px;
+    }
+
+    .spacerimg .button {
+        position: absolute;
+        text-decoration: none;
+        left: 35%;
+        right: 35%;
+        width: auto;
+        margin: 3% auto;
+    }
+
+
     #index-first {
         display: grid;
         grid-template-columns: 45% 45%;
         grid-gap: 10%;
-        
+
     }
-    
+
     .grey-info-box {
         height: auto;
         width: auto;
         margin-bottom: 50px;
     }
-    
+
     /* Tablet Viewport: Style rules for Index.html Upcoming Events */
-            #event-calendar {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(4, 1fr);
+    #event-calendar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
 
-            }
-    
+    }
+
     /* Tablet Viewport: style rules for packages lists*/
-        #packagelist {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            grid-gap: 1rem;
-            width: 100%;
-        }
-        
-        #packagelist .grey-info-box {
-            height: 75%;
+    #packagelist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        width: 100%;
+    }
 
-        }
-    
+    #packagelist .grey-info-box {
+        height: 75%;
+
+    }
+
+    /*Tablet Viewport: Testimony page */
+
+    .testimonyimg {
+        position: relative;
+        left: 145px;
+    }
+
+    .testimonyimg2 {
+        position: relative;
+        left: 180px;
+    }
+
+    .buttontestimonial {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        height: 30px;
+        position: relative;
+        top: 223px;
+        right: 110px;
+        width: auto;
+    }
+
+    .buttontestimonial:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
+
+    form {
+        width: 100%;
+        border: 2px #014D22;
+        background-color: #EAEAEA;
+    }
+
 
     /* Tablet Viewport: payment process list */
-    
+
     #paymentprocess {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
-    
+
     .payment-steps section {
         height: 175px;
     }
-    
+
     #tanbox {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        align-items: center;
     }
-    
-    #tanbox h2, #tanbox h3 {
-    text-align: left;
-    color: #fff;
-    top: 30%;
-    bottom: 30%;
-    width: 40%;
+
+    #tanbox h2,
+    #tanbox h3 {
+        text-align: left;
+        color: #fff;
+        top: 30%;
+        bottom: 30%;
+        width: 40%;
     }
-    
+
     #tanbox h2 {
         top: auto;
         bottom: auto;
         width: 100%;
         column-span: all;
     }
-    
+
     #tanbox .parent-activity {
         grid-column: 1;
         margin-bottom: 25px;
         margin-top: 0;
     }
-    
+
     #tanbox .parent-transport {
         grid-column: 2;
         margin-bottom: 25px;
         margin-top: 0;
     }
-    
+
     #tanbox .parent-transport .button {
         margin: 0;
         float: right;
     }
-    
+
     #tanbox .contactpage {
         position: relative;
     }
-    
+
     .resource-btns .button {
-    display: block;
-    width: 70%;
-    margin-right: 0;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+        display: block;
+        width: 70%;
+        margin-right: 0;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .resource-btns a {
-         text-decoration: none;
+        text-decoration: none;
     }
 
     .resource-btns {
@@ -986,176 +1145,192 @@ footer {
         margin-bottom: 1%;
     }
 
-    
-    .lodging-grid1, .lodging-grid2, .lodging-grid3, .transport-grid {
+
+    .lodging-grid1,
+    .lodging-grid2,
+    .lodging-grid3,
+    .transport-grid {
         grid-template-rows: 300px auto auto;
     }
-    
-    .activites-grid1, .activites-grid2, .activites-grid3 {
+
+    .activites-grid1,
+    .activites-grid2,
+    .activites-grid3 {
         grid-template-rows: 300px auto auto;
     }
-    
+
     .activites-grid4 {
         grid-template-rows: auto auto auto;
     }
- 
-    .diamond-img img, .lighthouse-img img, .arizona-img img, .luau-img img {
+
+    .diamond-img img,
+    .lighthouse-img img,
+    .arizona-img img,
+    .luau-img img {
         transform: none;
     }
-    
+
     /* Hide mobile headers */
-    #basketball-header-mobile, #softball-header-mobile, #soccer-header-mobile {
+    #basketball-header-mobile,
+    #softball-header-mobile,
+    #soccer-header-mobile {
         display: none;
     }
-    
-    /* Tablet Viewport: Styles for the events page */    
+
+    /* Tablet Viewport: Styles for the events page */
     .events {
         padding-bottom: 15px;
     }
-    
+
     /* Tablet Viewport: Style rules for basketball, softball, and soccer page */
-    .basketball-background-img, .softball-background-img, .soccer-background-img {
+    .basketball-background-img,
+    .softball-background-img,
+    .soccer-background-img {
         float: left;
         max-width: 42%;
         padding-right: 20px;
     }
-    
-    .basketball-background, .softball-background, .soccer-background {
+
+    .basketball-background,
+    .softball-background,
+    .soccer-background {
         margin: 0;
         padding-bottom: 50px;
     }
-    
-    .softball-background-content a, soccer-background-content a {
+
+    .softball-background-content a,
+    soccer-background-content a {
         margin-left: 290px;
     }
-    
+
     .facility-section {
         padding-bottom: 30px;
     }
-    
+
     .container-facility {
         padding-bottom: 30px;
     }
-        
+
     #timeline {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
     }
-    
+
     #timeline section {
         height: 200px;
     }
-    
+
     .timeline-steps .numbers {
         margin-left: 20px;
         margin-bottom: -20px;
     }
-    
+
     .timeline-steps {
         padding: 10px 10px;
     }
-    
+
     .committed-teams-img img {
         max-width: 200%;
         padding-bottom: 30px;
         margin-left: 150px;
     }
-    
+
     .soccer-committed-teams-img {
         max-width: 100px;
         margin-left: 300px;
     }
-    
-    
+
+
     /* Tablet Viewport: Style Rules for footer*/
     footer {
         color: #fff;
     }
-    
+
     footer p {
         font-family: "DM Sans", sans-serif;
         text-align: right;
         padding-right: 3%;
     }
-    
+
     .container {
         display: grid;
         grid-template-columns: auto auto auto;
     }
-    
+
     #footer-logo {
         display: block;
         text-align: left;
         padding-left: 15%;
         padding-top: 5%;
     }
-    
+
     .footer-nav {
         display: grid;
     }
-    
+
     .footer-nav li {
         list-style: none;
         text-align: left;
     }
-    
-    .footer-nav li a{
+
+    .footer-nav li a {
         color: #fff;
     }
-    
+
     .container-socials-content {
         display: grid;
         grid-template-columns: auto;
     }
-    
+
     .socials {
         text-align: right;
         padding-right: 10%;
     }
-    
+
     .socials a {
         padding-left: 2%;
     }
-    
+
     .footer-contact li {
         text-align: right;
     }
-    
+
 }
 
 /* Media Query for Desktop Viewport */
-@media screen and (min-width: 1015px), print {
-    
+@media screen and (min-width: 1015px),
+print {
+
     /* Desktop Viewport: Style rules for header */
     header {
         float: left;
         padding-bottom: 5px;
-        margin-left: 15px; 
+        margin-left: 15px;
         width: 10%
     }
-    
+
     /* Desktop Viewport: Style rules for nav area  */
     .tablet-desktop-nav {
         float: right;
         width: 85%;
         margin: 0;
     }
-    
+
     .tablet-desktop-nav ul {
         display: inline-block;
         position: absolute;
         background: #014D22;
         list-style: none;
     }
-    
+
     .tablet-desktop-nav ul li {
         display: inline-block;
         border: none;
         padding: 0;
         width: auto;
     }
-    
+
     .tablet-desktop-nav ul li a {
         color: #fff;
         display: block;
@@ -1164,42 +1339,42 @@ footer {
         text-align: center;
         text-decoration: none;
     }
-    
+
     .tablet-desktop-nav ul li:hover {
         color: #fff;
         background-color: #22A858;
     }
-    
+
     /* dropdown nav for events */
-    
+
     .eventsDropdown {
         display: none;
     }
-    
+
     .tablet-desktop-nav ul li:hover .eventsDropdown {
         display: block;
         position: absolute;
         background-color: #014D22;
         margin-top: 0px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
     }
-    
+
     .tablet-desktop-nav ul li:hover .eventsDropdown ul {
         display: block;
         width: auto;
         margin: 0;
         padding: 0;
     }
-    
+
     .tablet-desktop-nav ul li:hover .eventsDropdown ul li a {
         text-align: left;
         font-family: "DM Sans", sans-serif;
         font-size: .57em;
-        
+
     }
 
-    
+
     /* Desktop Viewport: Style rules for hero image */
     #heroimg-tab-desk p {
         position: absolute;
@@ -1209,393 +1384,403 @@ footer {
         font-family: "DM Sans", sans-serif;
         font-size: 1.1em;
     }
-    
+
     #heroimg-tab-desk .index-btns {
         position: absolute;
         top: 80%;
         padding-left: 5%;
         font-size: 1.2em;
-    }    
-    
+    }
 
-    
+
+
     /* Desktop Viewport: Style rules for main content */
     main {
         clear: left;
     }
-    
-        /* Desktop Viewport: Style rules for Index.html Upcoming Events */
-            #event-calendar {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                grid-template-rows: repeat(2, 1fr);
 
-            }
-    
-        /* Desktop Viewport: Style rules for payment process list */
+    /* Desktop Viewport: Style rules for Index.html Upcoming Events */
+    #event-calendar {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+
+    /* Desktop Viewport: Style rules for payment process list */
     #paymentprocess {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
-    
-    
+
+
     /* Desktop Viewport: Packges content */
-    
-.lodging-grid1 {
-    display: grid;
-    grid-template-columns: 30% auto auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
 
-.marriot-hotel-content {
-    grid-column: 2/3;
-    grid-row: auto;
-}
+    .lodging-grid1 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.marriot-hotel-img {
-    grid-column: 1;
-    grid-row: auto;
-    overflow: visible;
-}
+    .marriot-hotel-content {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
 
-.lodging-grid2 {
-    display: grid;
-    grid-template-columns: auto auto 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .marriot-hotel-img {
+        grid-column: 1;
+        grid-row: auto;
+        overflow: visible;
+    }
 
-.ohana-hotel-content {
-    grid-column: 1/2;
-    grid-row: auto;
-}
+    .lodging-grid2 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.ohana-hotel-img {
-    grid-column: 3;
-    grid-row: auto;
-    overflow: visible;
-}
+    .ohana-hotel-content {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
 
-.lodging-grid3 {
-    display: grid;
-    grid-template-columns: 30% auto auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .ohana-hotel-img {
+        grid-column: 3;
+        grid-row: auto;
+        overflow: visible;
+    }
 
-.hilo-hotel-content {
-    grid-column: 2/3;
-    grid-row: auto;
-}
+    .lodging-grid3 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.hilo-hotel-img {
-    grid-column: 1;
-    grid-row: auto;
-    overflow: visible;
-}
+    .hilo-hotel-content {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
 
-.transport-grid {
-    display: grid;
-    grid-template-columns: auto auto 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .hilo-hotel-img {
+        grid-column: 1;
+        grid-row: auto;
+        overflow: visible;
+    }
 
-.transport {
-    grid-column: 1/2;
-    grid-row: auto;
-}
+    .transport-grid {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.transport-car {
-    grid-column: 3;
-    grid-row: auto;
-    overflow: visible;
-}
-    
-    .ohana-hotel-img img, .transport-car img, .hilo-hotel-img img {
+    .transport {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .transport-car {
+        grid-column: 3;
+        grid-row: auto;
+        overflow: visible;
+    }
+
+    .ohana-hotel-img img,
+    .transport-car img,
+    .hilo-hotel-img img {
         transform: none;
     }
-    
-    
-/* Desktop Viewport: Activities content */
 
-.activites-grid1 {
-    display: grid;
-    grid-template-columns: 30% auto auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
 
-.diamond-content {
-    grid-column: 2/3;
-    grid-row: auto;
-}
+    /* Desktop Viewport: Activities content */
 
-.diamond-img {
-    grid-column: 1;
-    grid-row: auto;
-    height: auto;
-    overflow: visible;
-}
+    .activites-grid1 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.activites-grid2 {
-    display: grid;
-    grid-template-columns: auto auto 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .diamond-content {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
 
-.lighthouse-content {
-    grid-column: 1/2;
-    grid-row: auto;
-}
+    .diamond-img {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
+    }
 
-.lighthouse-img {
-    grid-column: 3;
-    height: auto;
-    grid-row: auto;
-    overflow: visible;
-}
+    .activites-grid2 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.activites-grid3 {
-    display: grid;
-    grid-template-columns: 30% auto auto;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .lighthouse-content {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
 
-.arizona-content {
-    grid-column: 2/3;
-    grid-row: auto;
-}
+    .lighthouse-img {
+        grid-column: 3;
+        height: auto;
+        grid-row: auto;
+        overflow: visible;
+    }
 
-.arizona-img {
-    grid-column: 1;
-    height: auto;
-    grid-row: auto;
-    overflow: visible;
-}
+    .activites-grid3 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.activites-grid4 {
-    display: grid;
-    grid-template-columns: auto auto 30%;
-    grid-template-rows: auto;
-    grid-column-gap: 20px;
-    align-items: center;
-    padding: 0;
-    margin: 0;
-}
+    .arizona-content {
+        grid-column: 2/3;
+        grid-row: auto;
+    }
 
-.luau-content {
-    grid-column: 1/2;
-    grid-row: auto;
-}
+    .arizona-img {
+        grid-column: 1;
+        height: auto;
+        grid-row: auto;
+        overflow: visible;
+    }
 
-.luau-img {
-    grid-column: 3;
-    grid-row: auto;
-    height: auto;
-    overflow: visible;
-}
+    .activites-grid4 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .luau-content {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
+
+    .luau-img {
+        grid-column: 3;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
+    }
+
     /* Style rules for event pages */
     .img-basketball {
         float: left;
         max-width: 32%;
         padding-right: 30px;
     }
-    
+
     .content-basketball {
         padding-right: 30px;
         padding-bottom: 40px;
     }
-    
+
     .content-basketball a {
         float: right;
     }
-    
+
     .img-softball {
         float: right;
         max-width: 32%;
     }
-    
+
     .content-softball {
         padding-left: 30px;
         padding-bottom: 40px;
     }
-    
+
     .content-softball a {
         float: left;
     }
-    
+
     .img-soccer {
-        float:left;
+        float: left;
         max-width: 27%;
         padding-right: 30px;
     }
-    
+
     .content-soccer {
         padding-left: 30px;
         padding-bottom: 40px;
     }
-    
+
     .content-soccer a {
         float: right;
         padding-right: 30px;
     }
-    
+
     /* Style rules for basketball, softball, and soccer pages */
-    .basketball-background, .softball-background, .soccer-background {
+    .basketball-background,
+    .softball-background,
+    .soccer-background {
         padding-bottom: 120px;
     }
-    
-    .basketball-background-img, .soccer-background-img {
+
+    .basketball-background-img,
+    .soccer-background-img {
         float: left;
         max-width: 25%;
         padding-right: 50px;
     }
-    
+
     .softball-background-img {
         max-width: 30%;
         padding-right: 50px;
         padding-top: 40px;
     }
-    
-    .basketball-background-content, .softball-background-content, .soccer-background-content {
+
+    .basketball-background-content,
+    .softball-background-content,
+    .soccer-background-content {
         padding: 30px 50px;
     }
-    
-    .basketball-background-content a, .softball-background-content a, .soccer-background-content a {
+
+    .basketball-background-content a,
+    .softball-background-content a,
+    .soccer-background-content a {
         float: right;
         padding-top: 35px;
     }
-    
+
     .facility-section {
         padding-bottom: 75px;
     }
-    
+
     .facility-content {
         margin-right: 700px;
         height: 360px;
     }
-    
+
     .basketball-facility-img img {
         max-width: 60%;
         float: right;
         margin-top: -375px;
         margin-right: 10px;
     }
-    
+
     .softball-facility-img img {
         max-width: 60%;
         float: right;
         margin-top: -384px;
         margin-right: -22px;
     }
-    
+
     .facility-content1 {
         margin-right: 580px;
         height: 380px;
         padding-left: 20px;
     }
-    
+
     .facility-content1 h3 {
         padding-top: 70px;
     }
-    
+
     .soccer-facility-img1 img {
         max-width: 48%;
         float: right;
         margin-top: -400px;
     }
-    
+
     .facility-content2 {
         margin-left: 620px;
         height: 378px;
         padding-right: 20px;
     }
-    
+
     .facility-content2 h3 {
         padding-top: 70px;
     }
-    
+
     .soccer-facility-img2 img {
         max-width: 48%;
         float: left;
         margin-top: -396px;
     }
-    
+
     .facility-content3 {
         margin-right: 620px;
         height: 300px;
         padding-left: 20px;
     }
-    
+
     .facility-content3 h3 {
         padding-top: 38px;
     }
-    
+
     .soccer-facility-img3 img {
         max-width: 50%;
         float: right;
         margin-top: -316px;
         margin-right: 6px;
     }
-    
+
     .facility-content4 {
         margin-left: 600px;
         height: 378px;
         padding-right: 20px;
     }
-    
+
     .facility-content4 h3 {
         padding-top: 86px;
     }
-    
+
     .soccer-facility-img4 img {
         max-width: 48%;
         float: left;
         margin-top: -398px;
     }
 
-    
-     #timeline {
+
+    #timeline {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         margin-bottom: -300px;
     }
-    
+
     #timeline section {
         height: 200px;
     }
-    
-    .timeline-steps .numbers{
+
+    .timeline-steps .numbers {
         margin-left: 50px;
     }
-    
+
     .container-basketball-teams {
         display: inline-grid;
         grid-template-columns: auto auto auto auto auto;
@@ -1603,13 +1788,13 @@ footer {
         height: 150px;
         align-content: center;
     }
-    
+
     .container-basketball-teams img {
         text-align: center;
         max-width: 40%;
         margin-left: 65px;
     }
-    
+
     .container-softball-teams {
         display: inline-grid;
         grid-template-columns: auto auto auto;
@@ -1617,13 +1802,13 @@ footer {
         height: 150px;
         align-content: center;
     }
-    
+
     .container-softball-teams img {
         max-width: 50%;
         margin-left: 96px;
         padding-top: 80px;
     }
-    
+
     .container-soccer-teams {
         display: inline-grid;
         grid-template-columns: auto auto auto;
@@ -1631,13 +1816,13 @@ footer {
         height: 150px;
         align-content: center;
     }
-    
+
     .container-soccer-teams img {
         max-width: 100px;
         margin: 0px 150px 0px 150px;
         padding-top: 15px;
     }
-    
+
     /* Desktop Viewport: Style rules for footer */
     #footer-logo {
         text-align: left;
@@ -1647,10 +1832,10 @@ footer {
 
 /* Media Query for large desktop viewports */
 @media screen and (min-width: 1921px) {
-      #container {
-    width: 1920px;
-    margin: 0 auto;
-  }
+    #container {
+        width: 1920px;
+        margin: 0 auto;
+    }
 }
 
 /* Media Query for Print */
@@ -1658,5 +1843,5 @@ footer {
     body {
         background-color: #fff;
         color: #000;
-        }
     }
+}
