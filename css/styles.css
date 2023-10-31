@@ -840,7 +840,8 @@ section {
 .container-soccer-teams img {
     max-width: 50%;
     padding-bottom: 15px;
-    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Style rules for footer content */
