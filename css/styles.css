@@ -26,6 +26,22 @@ video {
     display: block;
 }
 
+/* Style rules for skip navigation link */
+.skip {
+    position: absolute;
+    left: -999px;
+}
+
+.skip:focus {
+    color: #fff;
+    background-color: #014D22;
+    text-decoration: none;
+    padding: 0.3%;
+    top: auto;
+    left: auto;
+    right: 1px;
+    z-index: 1;
+}
 
 /* Style Rules for Mobile Viewport */
 
