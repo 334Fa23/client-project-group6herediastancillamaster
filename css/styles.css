@@ -796,39 +796,131 @@ section {
     margin-bottom: -50px;
 }
 
+.events-grid1, 
+.events-grid2, 
+.events-grid3 {
+    display: inline-grid;
+    grid-template-rows: 130px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    height: auto;
+}
+
+.img-basketball, 
+.img-softball, 
+.img-soccer {
+    grid-row: 1;
+    overflow: hidden;
+}
+
+.img-basketball img {
+    transform: translateY(-5%);
+}
+
+.img-softball img {
+    transform: translateY(-5%);
+}
+
+.img-soccer img {
+    transform: translateY(-5%);
+}
+
+.content-basketball,
+.content-softball, 
+.content-soccer {
+    grid-row: 2/3;
+    height: auto;
+}
+
 /* Style rules for basketball, softball, and soccer pages */
+.basketball-background {
+    display: inline-grid;
+    grid-template-rows: 240px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    height: auto;
+}
+
+.softball-background {
+    display: inline-grid;
+    grid-template-rows: 150px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    height: auto;
+}
+
+.soccer-background {
+    display: inline-grid;
+    grid-template-rows: 160px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 10px;
+    height: auto;
+}
+
+.basketball-background-img,
+.softball-background-img,
+.soccer-background-img {
+    grid-row: 1;
+    overflow: hidden;
+}
+
+.basketball-background-img img {
+    transform: translateY(10%);
+}
+
+.container-facility {
+    padding: 10px 0 10px 0;
+}
+
 .facility-section {
-    padding-bottom: 15px;
+    display: inline-grid;
+    grid-template-rows: 120px auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    height: auto;
+}
+
+.facility-img {
+    grid-row: 1;
+    overflow: hidden;
+}
+
+.facility-content {
+    grid-row: 2/3;
+    height: auto;
 }
 
 .timeline {
     display: inline-grid;
+    margin: auto;
 }
 
 .timeline-steps .numbers {
     margin-bottom: -20px;
 }
 
+.committed-teams {
+    padding-top: 10px;
+}
+
 .container-basketball-teams,
 .container-softball-teams,
 .container-soccer-teams {
-    display: block;
-    margin-bottom: -30px;
-    width: 100%;
-}
-
-.committed-teams {
-    padding-top: 15px;
-    width: 100%;
-}
+    display: inline-grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    background-color: #EAEAEA;
+    height: auto;
+    margin: auto;
+    padding: 20px 0 20px 0;
+    }
 
 .container-basketball-teams img,
 .container-softball-teams img,
 .container-soccer-teams img {
     max-width: 50%;
-    padding-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
 }
 
 /* Style rules for footer content */
@@ -1137,41 +1229,53 @@ print {
         transform: none;
     }
 
-    /* Hide mobile headers */
+    /* Tablet Viewport: Styles for the events page */
+    .events {
+        padding-bottom: 15px;
+    }
+    
+    .events-grid1,
+    .events-grid2,
+    .events-grid3 {
+        grid-template-rows: 300px auto auto;
+    }
+
+    /* Tablet Viewport: Style rules for basketball, softball, and soccer page */
+    /* Hide mobile headers for basketball, softball, and soccer pages */
     #basketball-header-mobile,
     #softball-header-mobile,
     #soccer-header-mobile {
         display: none;
     }
-
-    /* Tablet Viewport: Styles for the events page */
-    .events {
-        padding-bottom: 15px;
-    }
-
-    /* Tablet Viewport: Style rules for basketball, softball, and soccer page */
-    .basketball-background-img,
-    .softball-background-img,
-    .soccer-background-img {
-        float: left;
-        max-width: 42%;
-        padding-right: 20px;
-    }
-
+    
     .basketball-background,
     .softball-background,
     .soccer-background {
-        margin: 0;
-        padding-bottom: 50px;
+        grid-template-rows: 300px auto auto;
     }
-
-    .softball-background-content a,
-    soccer-background-content a {
-        margin-left: 290px;
+    
+    .basketball-background-img img {
+        transform: none;
+        max-width: 50%;
+        margin: auto;
     }
-
+    
+    .softball-background-img img {
+        transform: none;
+    }
+    
+    .soccer-background-img img {
+        transform: none;
+        max-width: 75%;
+        margin: auto;
+    }
+    
     .facility-section {
-        padding-bottom: 30px;
+        grid-template-rows: 300px auto auto;
+    }
+
+    .facility-img img {
+        transform: none;
     }
 
     .container-facility {
@@ -1182,30 +1286,30 @@ print {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        margin: auto;
     }
 
     #timeline section {
         height: 200px;
+        margin: auto;
     }
 
     .timeline-steps .numbers {
-        margin-left: 20px;
-        margin-bottom: -20px;
+        margin: auto;
     }
 
     .timeline-steps {
         padding: 10px 10px;
+        margin: auto;
     }
 
-    .committed-teams-img img {
-        max-width: 200%;
-        padding-bottom: 30px;
-        margin-left: 150px;
+    .container-basketball-teams {
+        grid-template-columns: auto auto;
     }
-
-    .soccer-committed-teams-img {
-        max-width: 100px;
-        margin-left: 300px;
+    
+    .container-softball-teams,
+    .container-soccer-teams {
+        grid-template-columns: auto auto auto;
     }
     
     /* Start External Page*/
@@ -1846,172 +1950,253 @@ print {
     }
 
     /* Style rules for event pages */
-    .img-basketball {
-        float: left;
-        max-width: 32%;
-        padding-right: 30px;
+    .events-grid1 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0
     }
 
     .content-basketball {
-        padding-right: 30px;
-        padding-bottom: 40px;
+        grid-column: 2/3;
+        grid-row: auto;
+    }
+    
+    .img-basketball {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .img-basketball img,
+    .img-softball img,
+    .img-soccer img {
+        transform: translateY(1%);
     }
 
     .content-basketball a {
         float: right;
     }
 
-    .img-softball {
-        float: right;
-        max-width: 32%;
+    .events-grid2 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0
     }
-
+    
     .content-softball {
-        padding-left: 30px;
-        padding-bottom: 40px;
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .img-softball {
+        grid-column: 3;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;        
     }
 
     .content-softball a {
         float: left;
     }
 
-    .img-soccer {
-        float: left;
-        max-width: 27%;
-        padding-right: 30px;
+    .events-grid3 {
+        display: grid;
+        grid-template-columns: 28% auto auto;
+        grid-template-rows: auto auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0
     }
 
     .content-soccer {
-        padding-left: 30px;
-        padding-bottom: 40px;
+        grid-column: 2/3;
+        grid-row: auto;
     }
-
-    .content-soccer a {
-        float: right;
-        padding-right: 30px;
+    
+    .img-soccer {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .learn-more-button3 {
+        grid-column: 3;
+        grid-row: 2;
+        margin: -40px auto auto auto;
+        
+    }
+    
+    .learn-more-button1 {
+        grid-column: 3;
+        grid-row: 2;
+        margin: -40px auto auto auto;
+    }
+    
+    .learn-more-button2 {
+        grid-column: 2/3;
+        grid-row: 2;
+        margin: -40px 20px 0 0;
+    }
+    
+    .learn-more-button3 {
+        grid-column: 3;
+        grid-row: 2;
+        margin: -40px -3px auto auto;
     }
 
     /* Style rules for basketball, softball, and soccer pages */
     .basketball-background,
     .softball-background,
     .soccer-background {
-        padding-bottom: 120px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
     }
-
-    .basketball-background-img,
-    .soccer-background-img {
-        float: left;
-        max-width: 25%;
-        padding-right: 50px;
-    }
-
-    .softball-background-img {
-        max-width: 30%;
-        padding-right: 50px;
-        padding-top: 40px;
-    }
-
-    .basketball-background-content,
+    
+    .basketball-background-content, 
     .softball-background-content,
     .soccer-background-content {
-        padding: 30px 50px;
+        grid-column: 2/3;
+        grid-row: auto;
     }
+    
+    .basketball-background-img img {
+        transform: translateY(5%);
+    }
+    
+    .softball-background-img img {
+        max-width: 75%;
+    }
+
 
     .basketball-background-content a,
     .softball-background-content a,
     .soccer-background-content a {
         float: right;
-        padding-top: 35px;
+        padding-top: 10px;
     }
+    
+    .container-facility {
+        padding-top: 50px;
+    }    
 
     .facility-section {
-        padding-bottom: 75px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
     }
 
+    .facility-img {
+        grid-column: 3;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
+    }
+    
     .facility-content {
-        margin-right: 700px;
-        height: 360px;
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .facility-section1 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
     }
 
-    .basketball-facility-img img {
-        max-width: 60%;
-        float: right;
-        margin-top: -375px;
-        margin-right: 10px;
+    .facility-img1 {
+        grid-column: 3;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
     }
-
-    .softball-facility-img img {
-        max-width: 60%;
-        float: right;
-        margin-top: -384px;
-        margin-right: -22px;
-    }
-
+    
     .facility-content1 {
-        margin-right: 580px;
-        height: 380px;
-        padding-left: 20px;
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .facility-section2 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
     }
 
-    .facility-content1 h3 {
-        padding-top: 70px;
+    .facility-img2 {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
     }
-
-    .soccer-facility-img1 img {
-        max-width: 48%;
-        float: right;
-        margin-top: -400px;
-    }
-
+    
     .facility-content2 {
-        margin-left: 620px;
-        height: 378px;
-        padding-right: 20px;
+        grid-column: 3;
+        grid-row: auto;
+    }
+    
+    .facility-section3 {
+        display: grid;
+        grid-template-columns: auto auto 38%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
     }
 
-    .facility-content2 h3 {
-        padding-top: 70px;
+    .facility-img3 {
+        grid-column: 3;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
     }
-
-    .soccer-facility-img2 img {
-        max-width: 48%;
-        float: left;
-        margin-top: -396px;
-    }
-
+    
     .facility-content3 {
-        margin-right: 620px;
-        height: 300px;
-        padding-left: 20px;
+        grid-column: 1;
+        grid-row: auto;
+    }
+    
+    .facility-section4 {
+        display: grid;
+        grid-template-columns: 30% auto auto;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        align-items: center;
     }
 
-    .facility-content3 h3 {
-        padding-top: 38px;
+    .facility-img4 {
+        grid-column: 1;
+        grid-row: auto;
+        height: auto;
+        overflow: visible;
     }
-
-    .soccer-facility-img3 img {
-        max-width: 50%;
-        float: right;
-        margin-top: -316px;
-        margin-right: 6px;
-    }
-
+    
     .facility-content4 {
-        margin-left: 600px;
-        height: 378px;
-        padding-right: 20px;
+        grid-column: 3;
+        grid-row: auto;
     }
-
-    .facility-content4 h3 {
-        padding-top: 86px;
-    }
-
-    .soccer-facility-img4 img {
-        max-width: 48%;
-        float: left;
-        margin-top: -398px;
-    }
-
 
     #timeline {
         display: grid;
@@ -2039,7 +2224,7 @@ print {
     .container-basketball-teams img {
         text-align: center;
         max-width: 40%;
-        margin-left: 65px;
+        margin-top: 100px;
     }
 
     .container-softball-teams {
@@ -2060,13 +2245,14 @@ print {
         display: inline-grid;
         grid-template-columns: auto auto auto;
         background-color: #EAEAEA;
-        height: 150px;
+        height: 100px;
         align-content: center;
+        margin-left: 130px;
     }
 
     .container-soccer-teams img {
         max-width: 100px;
-        margin: 0px 150px 0px 150px;
+        margin: 100px 100px 0 100px;
         padding-top: 15px;
     }
     
