@@ -616,7 +616,7 @@ label {
     width: 100%;
     height: auto;
     text-align: center;
-    margin: 0;
+    margin: 50px 0 50px;
 }
 
 .spacerimg img {
@@ -1075,7 +1075,7 @@ print {
         position: absolute;
         text-decoration: none;
         max-width: 350px;
-        max-height: 70px;
+        max-height: 30px;
         right: 20%;
         left: 20%;
         top: 20%;
