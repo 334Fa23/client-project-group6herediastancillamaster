@@ -142,10 +142,6 @@ p {
     font-style: normal;
 }
 
-.sectioncontact {
-    height: 300px;
-}
-
 #index-who {
     float: left;
     display: block;
@@ -164,17 +160,13 @@ p {
 /* Start External Page*/
 
 .externalone {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    display: none;
     max-width: 33%;
     max-height: 33%;
-    position: relative;
-    bottom: 110px;
 }
 
 .externaltwo {
-    display: block;
+    display: none;
     max-width: 32%;
     max-height: 30%;
     position: relative;
@@ -198,45 +190,24 @@ p {
     text-align: center;
     font-size: 1em;
     border: none;
-    padding: 3px 20px;
-    display: inline-block;
+    padding: 10px 10px;
+    display: block;
     margin: 0px 0 15px 0px;
 }
 
-.iconphoneone {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 280px;
-    top: 10px;
-}
-
-.iconphonetwo {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 100px;
-    top: 10px;
-}
-
-.iconmailone {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 460px;
-    top: 15px;
-}
-
-.iconmailtwo {
-    max-height: 3%;
-    max-width: 3%;
-    position: relative;
-    float: left;
-    left: 280px;
-    top: 15px;
+.buttonexternal {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    
 }
 
 /* End External Page */
@@ -253,7 +224,7 @@ p {
 .testimonyimg {
     max-width: 10%;
     max-height: 8%;
-    display: inline-block;
+    display: inline;
     padding: 1%;
 }
 
@@ -263,14 +234,11 @@ p {
     max-height: 10%;
     display: inline-block;
     padding: 3%;
-    position: relative;
-    right: 400px;
 }
 
 .pastparticipants {
     background-color: #EAEAEA;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 
 }
 
@@ -285,9 +253,8 @@ p {
     cursor: pointer;
     text-decoration: none;
     height: 50px;
-    position: relative;
-    top: 180px;
-    left: 5px;
+    text-align: center;
+    margin-top: auto;
 }
 
 .buttontestimonial:hover {
@@ -302,18 +269,30 @@ p {
     background-color: #EAEAEA;
     border: 2px #014D22;
     position: relative;
+    text-align: center;
 }
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+}
+
 
 /* End Testimony */
 
 
 /* Contact Page */
 
+.contacth2 {
+    color: #fff;
+    text-align: center;
+}
+
 .columnfirst {
-    float: left;
-    width: 31.33%;
+    width: auto;
     padding-left: .5%;
-    height: 360px;
+    height: auto;
 }
 
 .columnfirst img {
@@ -325,25 +304,25 @@ p {
 }
 
 .columnsecond {
-    float: left;
-    width: 31.33%;
+    width: auto;
     padding-left: 1.5%;
-    height: 360px;
+    height: auto;
 }
 
 .columnsecond img {
-    width: 80%;
-    height: 160px;
+    width: 70%;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
     display: block;
+    
 }
 
 .columnthird {
-    float: left;
-    width: 31.33%;
+    width: auto;
     padding-left: 1.5%;
-    height: 360px;
+    height: auto;
 }
 
 .columnthird img {
@@ -354,6 +333,10 @@ p {
     display: block;
 }
 
+.sectioncontact {
+    height: auto;
+}
+
 .contacth4alex {
     color: #fff;
     text-align: center;
@@ -361,9 +344,8 @@ p {
     border: none;
     background-color: transparent;
     display: inline-block;
-    position: relative;
-    right: 120px;
-    top: 33px;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 .contacth4walker {
@@ -373,9 +355,8 @@ p {
     border: none;
     background-color: transparent;
     display: inline-block;
-    position: relative;
-    right: 120px;
-    top: 30px;
+    margin-top: auto;
+    margin-left: auto;
 }
 
 .contacth4john {
@@ -385,57 +366,41 @@ p {
     border: none;
     background-color: transparent;
     display: inline-block;
-    position: relative;
-    right: 120px;
-    top: 95px;
+    margin-top: auto;
+    margin-left: auto;
 }
 
-.iconmailcontactalex {
-    max-height: 6%;
-    max-width: 6%;
-    position: relative;
-    float: left;
-    left: 380px;
-    top: 60px;
-}
-
-.iconmailcontactjohn {
-    max-height: 6%;
-    max-width: 6%;
-    position: relative;
-    float: left;
-    right: 370px;
-    top: 120px;
-}
-
-.iconmailcontactwalker {
-    max-height: 6%;
-    max-width: 6%;
-    position: relative;
-    float: left;
-    right: 1px;
-    top: 60px;
+.contacth4 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .containertan {
     background-color: #B4965C;
     padding: 0%;
-    display: inline-block;
+    display: block;
     width: 96%;
-    margin: 250px 0px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .iconcontacttan {
-    display: inline-block;
-    padding-left: 3%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 formcontact {
     width: auto;
     border: 2px #014D22;
     background-color: #EAEAEA;
-    position: relative;
-    margin-bottom: 100px;
 }
 
 .buttoncontact {
@@ -448,10 +413,15 @@ formcontact {
     padding: 8px 15px 8px;
     cursor: pointer;
     text-decoration: none;
-    position: relative;
-    left: 800px;
-    bottom: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 200px;
+    margin-top: 5px;
+    
 }
+
 
 .buttoncontact:hover {
     background-color: #014D22;
@@ -476,12 +446,6 @@ label {
     padding: 1%;
     color: green;
     font-size: 1.25em;
-}
-
-.form-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
 }
 
 .labeldivision {
@@ -1060,49 +1024,6 @@ print {
 
     }
 
-    /*Tablet Viewport: Testimony page */
-
-    .testimonyimg {
-        position: relative;
-        left: 145px;
-    }
-
-    .testimonyimg2 {
-        position: relative;
-        left: 180px;
-    }
-
-    .buttontestimonial {
-        font-family: "DM Sans", sans-serif;
-        font-size: .8em;
-        color: #fff;
-        background-color: #22A858;
-        border-radius: 5px;
-        border: none;
-        padding: 5px 15px 8px;
-        cursor: pointer;
-        text-decoration: none;
-        height: 30px;
-        position: relative;
-        top: 223px;
-        right: 110px;
-        width: auto;
-    }
-
-    .buttontestimonial:hover {
-        background-color: #014D22;
-        color: #fff;
-        border-radius: 10px;
-        border: none;
-    }
-
-    form {
-        width: 100%;
-        border: 2px #014D22;
-        background-color: #EAEAEA;
-    }
-
-
     /* Tablet Viewport: payment process list */
 
     #paymentprocess {
@@ -1286,6 +1207,283 @@ print {
         max-width: 100px;
         margin-left: 300px;
     }
+    
+    /* Start External Page*/
+
+.externalone {
+    display: none;
+    max-width: 33%;
+    max-height: 33%;
+}
+
+.externaltwo {
+    display: none;
+    max-width: 32%;
+    max-height: 30%;
+    position: relative;
+    float: right;
+    bottom: 190px;
+}
+
+.externalh4 {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.externalh4logos {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    padding: 10px 10px;
+    display: inline-block;
+    margin: 0px 0 15px 0px;
+}
+
+.buttonexternal {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: auto;
+    display: inline-block;
+    
+}
+
+/* End External Page */
+
+
+/* Start Testimony Page */
+
+.testimony-vid {
+    width: 70%;
+    height: auto;
+    margin: 25px 15% 45px;
+}
+
+.testimonyimg {
+    max-width: 10%;
+    max-height: 8%;
+    display: inline;
+    padding: 1%;
+}
+
+
+.testimonyimg2 {
+    max-width: 10%;
+    max-height: 10%;
+    display: inline-block;
+    padding: 3%;
+}
+
+.pastparticipants {
+    background-color: #EAEAEA;
+    text-align: center;
+
+}
+
+.buttontestimonial {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: right;
+}
+
+.buttontestimonial:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+#formtestimony {
+    width: auto;
+    background-color: #EAEAEA;
+    border: 2px #014D22;
+    text-align: center;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+
+/* End Testimony */
+
+
+/* Contact Page */
+
+.contacth2 {
+    color: #fff;
+    text-align: center;
+}
+
+.columnfirst {
+    width: auto;
+    padding-left: .5%;
+    height: auto;
+}
+
+.columnfirst img {
+    width: 60%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnsecond {
+    width: auto;
+    padding-left: 1.5%;
+    height: auto;
+}
+
+.columnsecond img {
+    width: 55%;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    display: block;
+    
+}
+
+.columnthird {
+    width: auto;
+    padding-left: 1.5%;
+    height: auto;
+}
+
+.columnthird img {
+    width: 55%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.sectioncontact {
+    height: auto;
+}
+
+.contacth4alex {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.contacth4walker {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.contacth4john {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.contacth4 {
+    background-color: transparent;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containertan {
+    background-color: #B4965C;
+    padding: 0%;
+    display: block;
+    width: 96%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.iconcontacttan {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+formcontact {
+    width: auto;
+    border: 2px #014D22;
+    background-color: #EAEAEA;
+}
+    
+.form-gridcontact {
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 20px;
+}
+
+.buttoncontact {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    margin-top: auto;
+}
+
+
+.buttoncontact:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* End Contact Page */
 
 
     /* Tablet Viewport: Style Rules for footer*/
@@ -1871,6 +2069,251 @@ print {
         margin: 0px 150px 0px 150px;
         padding-top: 15px;
     }
+    
+/* Start External Page*/
+
+.externalone {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 33%;
+    max-height: 33%;
+    position: relative;
+    bottom: 110px;
+}
+
+.externaltwo {
+    display: block;
+    max-width: 32%;
+    max-height: 30%;
+    position: relative;
+    float: right;
+    bottom: 190px;
+}
+
+.externalh4 {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    display: inline-block;
+    margin-left: auto;
+}
+
+.externalh4logos {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    padding: 3px 20px;
+    display: inline-block;
+    margin: 0px 0 15px 0px;
+}
+    
+.buttonexternal {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    float: left;
+    
+}
+
+/* End External Page */
+
+
+/* Start Testimony Page */
+
+.testimony-vid {
+    width: 70%;
+    height: auto;
+    margin: 25px 15% 45px;
+}
+
+.testimonyimg {
+    max-width: 10%;
+    max-height: 8%;
+    display: inline;
+    padding: 1%;
+}
+
+
+.testimonyimg2 {
+    max-width: 10%;
+    max-height: 10%;
+    display: inline-block;
+    padding: 3%;
+}
+
+.pastparticipants {
+    background-color: #EAEAEA;
+    text-align: center;
+
+}
+
+.buttontestimonial {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    height: 50px;
+    text-align: center;
+    margin-top: auto;
+}
+
+.buttontestimonial:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+#formtestimony {
+    width: auto;
+    background-color: #EAEAEA;
+    border: 2px #014D22;
+    position: relative;
+}
+
+/* End Testimony */
+
+
+/* Contact Page */
+
+.columnfirst {
+    float: left;
+    width: 31.33%;
+    padding-left: .5%;
+    height: 360px;
+}
+
+.columnfirst img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnsecond {
+    float: left;
+    width: 31.33%;
+    padding-left: 1.5%;
+    height: 360px;
+}
+
+.columnsecond img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.columnthird {
+    float: left;
+    width: 31.33%;
+    padding-left: 1.5%;
+    height: 360px;
+}
+
+.columnthird img {
+    width: 80%;
+    height: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contacth4alex {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.contacth4walker {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.contacth4john {
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.containertan {
+    background-color: #B4965C;
+    padding: 0%;
+    display: inline-block;
+    width: 96%;
+    margin-top: 250px;
+}
+
+.iconcontacttan {
+    display: inline-block;
+    padding-left: 3%;
+}
+
+formcontact {
+    width: auto;
+    border: 2px #014D22;
+    background-color: #EAEAEA;
+}
+
+.buttoncontact {
+    font-family: "DM Sans", sans-serif;
+    font-size: .8em;
+    color: #fff;
+    background-color: #22A858;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px 8px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    left: 800px;
+    bottom: 200px;
+}
+
+.buttoncontact:hover {
+    background-color: #014D22;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/* End Contact Page */
 
     /* Desktop Viewport: Style rules for footer */
     #footer-logo {
