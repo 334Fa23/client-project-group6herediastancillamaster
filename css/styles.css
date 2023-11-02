@@ -2277,6 +2277,7 @@ print {
         max-height: 33%;
         position: relative;
         bottom: 110px;
+        float: right;
     }
 
     .externaltwo {
