@@ -419,6 +419,7 @@ formcontact {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     height: 50px;
     width: 200px;
     margin-top: 5px;
@@ -1046,7 +1047,7 @@ print {
 
     .tablet-desktop-nav li {
         font-family: "DM Sans", sans-serif;
-        font-size: 1.25em;
+        font-size: 1em;
         display: inline-block;
         border-right: 1px solid #fff;
     }
@@ -1779,6 +1780,7 @@ print {
     .tablet-desktop-nav ul li a {
         color: #fff;
         display: block;
+        font-size: 1.1em;
         padding: 0.5em 1em;
         width: auto;
         text-align: center;
@@ -2658,8 +2660,16 @@ print {
 /* Media Query for large desktop viewports */
 @media screen and (min-width: 1921px) {
     #container {
-        width: 1920px;
+        min-width: 1920px;
         margin: 0 auto;
+    }
+    
+    #heroimg-tab-desk {
+        width: auto;
+    }
+    
+    .tablet-desktop-nav ul li a {
+        font-size: 1.5em;
     }
 }
 
