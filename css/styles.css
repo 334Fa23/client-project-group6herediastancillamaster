@@ -419,7 +419,6 @@ formcontact {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     height: 50px;
     width: 200px;
     margin-top: 5px;
@@ -467,6 +466,9 @@ label {
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
 }
 
 
@@ -608,9 +610,13 @@ label {
 }
 
 .payment-numbers h4 {
-    margin: 20px 40%;
+    margin: 20px auto;
     display: block;
-    justify-items: center;
+    text-align: center;
+    width: 50px;
+    padding-left: 0;
+    padding-right: 0;
+
 }
 
 .spacerimg {
@@ -651,7 +657,7 @@ section {
 
 #tanbox {
     background-color: #B4965C;
-    padding: 1% 2%;
+    padding: 1% 2% 2%;
     display: inline-block;
     width: 96%;
     margin: 45px 0;
@@ -676,24 +682,25 @@ section {
 }
 
 #tanbox .parent-transport .button {
-    margin: 0 31% 20px;
+    margin: 0 31% 2%;
+    display: flex;
+    justify-content: center;
 }
 
 .resource-btns .button {
-    display: block;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: auto;
+   
 }
 
 .resource-btns a {
     text-decoration: none;
 }
 
-.resource-btns {
-    width: auto;
+#tanbox .resource-btns {
+    width: 100%;
+    height: auto;
     margin-top: 1%;
     margin-bottom: 1%;
 }
