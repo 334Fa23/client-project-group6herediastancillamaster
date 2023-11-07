@@ -207,6 +207,8 @@ p {
     text-decoration: none;
     margin: auto;
     display: block;
+    width: 35%;
+    text-align: center;
     
 }
 
@@ -280,6 +282,15 @@ p {
     grid-template-columns: auto;
     grid-gap: 20px;
 }
+
+.customerinformation {
+        background-color: #fff;
+    }
+
+ .messagetestimony {
+        background-color: #fff;
+    }
+
 
 
 /* End Testimony */
@@ -1459,6 +1470,7 @@ print {
     text-decoration: none;
     margin: auto;
     display: inline-block;
+    width: 25%;
     
 }
 
@@ -1534,8 +1546,14 @@ print {
     grid-gap: 20px;
 }
     .messagetestimony {
-        height: 70%
+        height: 70%;
+        background-color: #fff;
     }
+    
+.customerinformation {
+        background-color: #fff;
+    }
+
 
 
 /* End Testimony */
@@ -1654,6 +1672,10 @@ print {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+    
+.labeldivision {
+    display: inline-block;
 }
 
 formcontact {
@@ -2413,6 +2435,7 @@ print {
         text-decoration: none;
         display: block;
         float: left;
+        width: 15%;
     
     }
 
@@ -2460,12 +2483,7 @@ print {
         text-decoration: none;
         height: 50px;
         text-align: center;
-        margin-top: auto;
         width: 20%;
-        float: left;
-        position: absolute;
-        left: 800px;
-        top: 250px;
     }
 
     .buttontestimonial:hover {
@@ -2473,6 +2491,10 @@ print {
         color: #fff;
         border-radius: 10px;
         border: none;
+    }
+    
+    .buttonright { 
+        
     }
 
     #formtestimony {
@@ -2607,7 +2629,7 @@ print {
         background-color: #B4965C;
         padding: 0%;
         display: inline-block;
-        width: 96%;
+        width: 100%;
         margin-top: 200px;
     }
 
@@ -2642,9 +2664,8 @@ print {
         padding: 8px 15px 8px;
         cursor: pointer;
         text-decoration: none;
-        position: relative;
-        left: 800px;
-        bottom: 200px;
+        margin-top: 15px;
+        margin-right: 15px;
     }
 
     .buttoncontact:hover {
