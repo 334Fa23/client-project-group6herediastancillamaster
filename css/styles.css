@@ -63,10 +63,11 @@ header img {
     color: #fff;
     text-align: center;
     font-family: "DM Sans", sans-serif;
-    font-size: 2em;
+    font-size: 1.7em;
     text-decoration: none;
     padding: 3%;
     display: block;
+    height: auto;
 }
 
 .mobile-nav a.menu-icon {
@@ -101,7 +102,7 @@ main {
 }
 
 h2 {
-    color: #A38041;
+    color: #937A4D;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -396,7 +397,7 @@ p {
 }
 
 .containertan {
-    background-color: #A38041;
+    background-color: #937A4D;
     padding: 0%;
     display: block;
     width: 96%;
@@ -669,7 +670,7 @@ section {
 /* Style Rule for packages tanbox */
 
 #tanbox {
-    background-color: #A38041;
+    background-color: #937A4D;
     padding: 1% 2% 2%;
     display: inline-block;
     width: 96%;
@@ -1661,7 +1662,7 @@ print {
 }
 
 .containertan {
-    background-color: #A38041;
+    background-color: #937A4D;
     padding: 0%;
     display: block;
     width: 96%;
@@ -2629,7 +2630,7 @@ print {
     }
 
     .containertan {
-        background-color: #A38041;
+        background-color: #937A4D;
         padding: 0%;
         display: inline-block;
         width: 100%;
