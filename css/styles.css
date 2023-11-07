@@ -102,7 +102,7 @@ main {
 }
 
 h2 {
-    color: #937A4D;
+    color: #846B43;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -397,7 +397,7 @@ p {
 }
 
 .containertan {
-    background-color: #937A4D;
+    background-color: #846B43;
     padding: 0%;
     display: block;
     width: 96%;
@@ -670,7 +670,7 @@ section {
 /* Style Rule for packages tanbox */
 
 #tanbox {
-    background-color: #937A4D;
+    background-color: #846B43;
     padding: 1% 2% 2%;
     display: inline-block;
     width: 96%;
@@ -1662,7 +1662,7 @@ print {
 }
 
 .containertan {
-    background-color: #937A4D;
+    background-color: #846B43;
     padding: 0%;
     display: block;
     width: 96%;
@@ -2630,7 +2630,7 @@ print {
     }
 
     .containertan {
-        background-color: #937A4D;
+        background-color: #846B43;
         padding: 0%;
         display: inline-block;
         width: 100%;
