@@ -101,7 +101,7 @@ main {
 }
 
 h2 {
-    color: #B4965C;
+    color: #A38041;
     font-family: "DM Sans", sans-serif;
 }
 
@@ -396,7 +396,7 @@ p {
 }
 
 .containertan {
-    background-color: #B4965C;
+    background-color: #A38041;
     padding: 0%;
     display: block;
     width: 96%;
@@ -450,6 +450,7 @@ formcontact {
 
 fieldset legend {
     font-weight: bold;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.25em;
     color: #014D22;
     border: 2px #014D22;
@@ -458,7 +459,8 @@ fieldset legend {
 label {
     display: block;
     padding: 1%;
-    color: green;
+    color: #014D22;
+    font-family: "DM Sans", sans-serif;
     font-size: 1.25em;
 }
 
@@ -667,7 +669,7 @@ section {
 /* Style Rule for packages tanbox */
 
 #tanbox {
-    background-color: #B4965C;
+    background-color: #A38041;
     padding: 1% 2% 2%;
     display: inline-block;
     width: 96%;
@@ -1259,7 +1261,7 @@ print {
 
     .resource-btns .button {
         display: block;
-        width: 70%;
+        width: 50%;
         margin-right: 0;
         margin-left: auto;
         margin-top: 20px;
@@ -1659,7 +1661,7 @@ print {
 }
 
 .containertan {
-    background-color: #B4965C;
+    background-color: #A38041;
     padding: 0%;
     display: block;
     width: 96%;
@@ -1841,13 +1843,14 @@ print {
         width: auto;
         margin: 0;
         padding: 0;
+       
     }
 
     .tablet-desktop-nav ul li:hover .eventsDropdown ul li a {
         text-align: left;
         font-family: "DM Sans", sans-serif;
-        font-size: .57em;
-
+        font-size: .785em;
+         border-bottom: solid 1px #22A858;
     }
 
 
@@ -2626,7 +2629,7 @@ print {
     }
 
     .containertan {
-        background-color: #B4965C;
+        background-color: #A38041;
         padding: 0%;
         display: inline-block;
         width: 100%;
