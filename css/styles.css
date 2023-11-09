@@ -1329,6 +1329,7 @@ print {
     .soccer-background {
         grid-template-rows: 300px auto auto;
         grid-template-columns: auto;
+        padding-bottom: 30px;
     }
     
     .basketball-background-img img {
