@@ -261,6 +261,7 @@ p {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5px;
 }
 
 .buttontestimonial:hover {
@@ -1524,12 +1525,8 @@ print {
     text-decoration: none;
     text-align: center;
     display: block;
-    margin: auto;
-    position: absolute;
-    left: 410px;
-    width: 30%;
-    height: 15%;
-    top: 240px;
+    margin-top: 8px;
+    float: right;
 }
 
 .buttontestimonial:hover {
@@ -2492,6 +2489,8 @@ print {
         height: 50px;
         text-align: center;
         width: 20%;
+        margin-left: 385px;
+        margin-right: 10px;
     }
 
     .buttontestimonial:hover {
@@ -2499,10 +2498,6 @@ print {
         color: #fff;
         border-radius: 10px;
         border: none;
-    }
-    
-    .buttonright { 
-        
     }
 
     #formtestimony {
@@ -2521,7 +2516,7 @@ print {
     
     .messagetestimony {
         height: 150px;
-        width: 80%;
+        width: 93%;
         background-color: #fff;
     }
     
