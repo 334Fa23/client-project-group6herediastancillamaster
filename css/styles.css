@@ -1413,7 +1413,7 @@ print {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
         grid-column-gap: 100px;
-        padding: 50px 80px 50px 80px;
+        padding: 30px;
         margin: auto;
         height: auto;
         width: auto;
