@@ -2211,6 +2211,7 @@ print {
     
     .softball-background-img img {
         max-width: 75%;
+        transform: translateY(10%);
     }
 
 
