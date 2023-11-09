@@ -124,7 +124,6 @@ h4 {
     border: none;
     padding: 5px 25px;
     display: inline-block;
-    margin: 20px 0 20px 100px;
 }
 
 
@@ -940,10 +939,12 @@ section {
 .timeline {
     display: inline-grid;
     margin: auto;
+    
 }
 
 .timeline-steps .numbers {
-    margin-bottom: -20px;
+    margin-bottom: -30px;
+    text-align: center;
 }
 
 .committed-teams {
@@ -1381,7 +1382,6 @@ print {
 
     .timeline-steps .numbers {
         margin: auto;
-        padding-right: 100px;
         text-align: center;
     }
 
