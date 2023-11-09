@@ -2381,7 +2381,7 @@ print {
 
     .container-soccer-teams img {
         max-width: 100px;
-        padding: 0 78px 0 78px;
+        padding: 30px;
         grid-row: 1 / span 3;
         margin: auto;
     }
