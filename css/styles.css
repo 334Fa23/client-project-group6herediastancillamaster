@@ -30,6 +30,7 @@ video {
 .skip {
     position: absolute;
     left: -999px;
+    color: #fff;
 }
 
 .skip:focus {
@@ -385,6 +386,7 @@ p {
 }
 
 .contacth4 {
+    text-decoration: none;
     background-color: transparent;
     color: #fff;
     font-size: 1em;
