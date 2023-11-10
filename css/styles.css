@@ -1651,6 +1651,7 @@ print {
 }
 
 .contacth4 {
+    text-decoration: none;
     background-color: transparent;
     color: #fff;
     font-size: 1em;
@@ -1665,7 +1666,7 @@ print {
     background-color: #846B43;
     padding: 0%;
     display: block;
-    width: 96%;
+    width: 100%;
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
@@ -1705,7 +1706,7 @@ formcontact {
     text-decoration: none;
     display: block;
     height: 50px;
-    margin-top: auto;
+    margin-top: 5px;
 }
 
 
@@ -2387,24 +2388,26 @@ print {
 
 /* Start External Page*/
 
-    .externalone {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        max-width: 33%;
-        max-height: 33%;
-        position: relative;
-        bottom: 110px;
-        float: right;
+    
+    .externalsectionone {
+        height: auto;
     }
-
+    
+    .externalsectionone img {
+        float: right;
+        height: 80%;
+        width: 35%;
+        object-fit: contain;
+        display: block;
+        position: relative;
+        bottom: 100px;
+    }
+    
     .externaltwo {
         display: block;
         max-width: 32%;
         max-height: 30%;
-        position: relative;
-        float: right;
-        bottom: 190px;
+        object-fit: cover;
     }
 
     .externalh4 {
@@ -2593,6 +2596,7 @@ print {
         display: inline-block;
         margin-top: auto;
         margin-left: auto;
+        margin-right: auto;
     }
 
     .contacth4walker {
@@ -2604,17 +2608,18 @@ print {
         display: inline-block;
         margin-top: auto;
         margin-left: auto;
+        margin-right: auto;
     }
 
     .contacth4john {
         color: #fff;
         text-align: center;
         font-size: 1em;
-        border: none;
-        background-color: transparent;
-        display: inline-block;
+        display: block;
         margin-top: auto;
         margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
     }
     
     .contacth4 {
