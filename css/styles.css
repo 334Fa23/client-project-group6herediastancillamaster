@@ -820,7 +820,7 @@ section {
 }
 
 #soccer {
-    margin-bottom: -50px;
+    margin-bottom: 50px;
 }
 
 .events-grid1, 
@@ -1136,7 +1136,7 @@ print {
         width: 100%;
         height: auto;
         padding: 0;
-        margin: 2% auto 5%;
+        margin: 2% auto 3%;
         text-align: center;
     }
 
