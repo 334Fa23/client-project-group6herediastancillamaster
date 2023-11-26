@@ -2585,7 +2585,7 @@ print {
     }
     
     .sectioncontact {
-    height: 243px;
+    height: 255px;
     }
     
     .contacth4alex {
@@ -2606,7 +2606,7 @@ print {
         font-size: 1em;
         border: none;
         background-color: transparent;
-        display: inline-block;
+        display: block;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -2614,13 +2614,11 @@ print {
 
     .contacth4john {
         color: #fff;
-        text-align: center;
         font-size: 1em;
         display: block;
         margin-top: auto;
-        margin-left: auto;
-        margin-right: auto;
         object-fit: contain;
+        text-align: center;
     }
     
     .contacth4 {
