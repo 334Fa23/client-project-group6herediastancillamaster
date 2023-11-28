@@ -2396,19 +2396,24 @@ print {
     
     .externalsectionone img {
         float: right;
-        height: 80%;
+        height: 70%;
         width: 35%;
         object-fit: contain;
         display: block;
-        position: relative;
-        bottom: 100px;
+    }
+    
+    .externalsectiontwo {
+        height: auto;
     }
     
     .externaltwo {
         display: block;
-        max-width: 32%;
-        max-height: 30%;
-        object-fit: cover;
+        object-fit: contain;
+        margin-top: 10px;
+        float: right;
+        margin-bottom: auto;
+        transform: translateY(-7%);
+        
     }
 
     .externalh4 {
@@ -2596,7 +2601,7 @@ print {
         background-color: transparent;
         display: inline-block;
         margin-top: auto;
-        margin-left: auto;
+        margin-left: 20px;
         margin-right: auto;
     }
 
@@ -2619,6 +2624,8 @@ print {
         margin-top: auto;
         object-fit: contain;
         text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     .contacth4 {
