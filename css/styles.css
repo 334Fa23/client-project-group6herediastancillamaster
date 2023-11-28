@@ -2209,11 +2209,13 @@ print {
     
     .basketball-background-img img {
         transform: translateY(5%);
+        padding-bottom: 10px;
     }
     
     .softball-background-img img {
         max-width: 75%;
-        transform: translateY(10%);
+        transform: translateY(9%);
+        padding-left: 50px;
     }
 
 
@@ -2225,7 +2227,7 @@ print {
     }
     
     .container-facility {
-        padding-top: 50px;
+        padding-top: 20px;
     }    
 
     .facility-section {
@@ -2337,7 +2339,7 @@ print {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        margin-bottom: -300px;
+        margin-bottom: -350px;
     }
 
     #timeline section {
