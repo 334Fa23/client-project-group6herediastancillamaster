@@ -1640,7 +1640,7 @@ print {
     }
 
     .columnfirst img {
-        width: 60%;
+        width: 40%;
         height: 160px;
         margin-left: auto;
         margin-right: auto;
@@ -1654,7 +1654,7 @@ print {
     }
 
     .columnsecond img {
-        width: 55%;
+        width: 40%;
         height: 150px;
         margin-left: auto;
         margin-right: auto;
@@ -1670,7 +1670,7 @@ print {
     }
 
     .columnthird img {
-        width: 55%;
+        width: 40%;
         height: 160px;
         margin-left: auto;
         margin-right: auto;
