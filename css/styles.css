@@ -160,19 +160,50 @@ p {
 
 /* Start External Page*/
 
-.externalone {
-    display: none;
-    max-width: 33%;
-    max-height: 33%;
+.external-grid1 {
+    display: grid;
+    grid-template-columns: auto auto 0%;
+    grid-template-rows: auto;
+    grid-column-gap: 1px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.externaltwo {
-    display: none;
-    max-width: 32%;
-    max-height: 30%;
-    position: relative;
-    float: right;
-    bottom: 190px;
+.kupar-content {
+    grid-column: 1/2;
+    grid-row: auto;
+}
+
+.kupar-image {
+    grid-column: 3;
+    height: 60%;
+    grid-row: auto;
+}
+
+.external-grid2 {
+    display: grid;
+    grid-template-columns: auto 0%;
+    grid-template-rows: auto;
+    grid-column-gap: 20px;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: auto;
+}
+
+.maryville-travel-content {
+    grid-column: 1/2;
+    grid-row: auto;
+    margin-bottom: auto;
+}
+
+.maryville-image {
+    grid-column: 2;
+    height: 55%;
+    grid-row: auto;
+    margin-bottom: auto;
+    transform: translateY(-15%)
 }
 
 .externalh4 {
@@ -210,7 +241,7 @@ p {
     display: block;
     width: 35%;
     text-align: center;
-    
+
 }
 
 /* End External Page */
@@ -286,12 +317,12 @@ p {
 }
 
 .customerinformation {
-        background-color: #fff;
-    }
+    background-color: #fff;
+}
 
- .messagetestimony {
-        background-color: #fff;
-    }
+.messagetestimony {
+    background-color: #fff;
+}
 
 
 
@@ -332,7 +363,7 @@ p {
     margin-right: auto;
     margin-top: auto;
     display: block;
-    
+
 }
 
 .columnthird {
@@ -436,7 +467,7 @@ formcontact {
     height: 50px;
     width: 200px;
     margin-top: 5px;
-    
+
 }
 
 
@@ -707,7 +738,7 @@ section {
     display: flex;
     justify-content: center;
     width: auto;
-   
+
 }
 
 .resource-btns a {
@@ -823,8 +854,8 @@ section {
     margin-bottom: 50px;
 }
 
-.events-grid1, 
-.events-grid2, 
+.events-grid1,
+.events-grid2,
 .events-grid3 {
     display: inline-grid;
     grid-template-rows: 130px auto auto;
@@ -833,8 +864,8 @@ section {
     height: auto;
 }
 
-.img-basketball, 
-.img-softball, 
+.img-basketball,
+.img-softball,
 .img-soccer {
     grid-row: 1;
     overflow: hidden;
@@ -847,7 +878,7 @@ section {
 }
 
 .content-basketball,
-.content-softball, 
+.content-softball,
 .content-soccer {
     grid-row: 2/3;
     height: auto;
@@ -942,7 +973,7 @@ section {
 .timeline {
     display: inline-grid;
     margin: auto;
-    
+
 }
 
 .timeline-steps .numbers {
@@ -968,7 +999,7 @@ section {
     height: auto;
     margin: auto;
     padding: 50px 0 50px 0;
-    }
+}
 
 .container-softball-teams {
     display: inline-grid;
@@ -993,7 +1024,7 @@ section {
     margin: auto;
     width: auto;
     padding: 50px;
-    }
+}
 
 .container-basketball-teams img,
 .container-softball-teams img,
@@ -1155,9 +1186,9 @@ print {
         right: 20%;
         left: 20%;
         top: 20%;
-        bottom: 20%;   
+        bottom: 20%;
         margin: auto;
-        
+
     }
 
 
@@ -1235,9 +1266,9 @@ print {
     #tanbox .parent-activity {
         display: block;
         padding-top: 20px;
-        margin-bottom: -10%;        
+        margin-bottom: -10%;
     }
-    
+
     #tanbox .parent-act-sections {
         grid-column: 1;
         margin-bottom: 10px;
@@ -1312,7 +1343,7 @@ print {
     .events {
         padding-bottom: 15px;
     }
-    
+
     .events-grid1,
     .events-grid2,
     .events-grid3 {
@@ -1326,7 +1357,7 @@ print {
     #soccer-header-mobile {
         display: none;
     }
-    
+
     .basketball-background,
     .softball-background,
     .soccer-background {
@@ -1334,28 +1365,28 @@ print {
         grid-template-columns: auto;
         padding-bottom: 30px;
     }
-    
+
     .basketball-background-img img {
         transform: none;
         max-width: 50%;
         margin: auto;
     }
-    
+
     .softball-background-img img {
         transform: none;
     }
-    
+
     .soccer-background-img img {
         transform: none;
         max-width: 75%;
         margin: auto;
     }
-    
+
     .facility-section {
         grid-template-rows: 300px auto auto;
         grid-template-columns: auto;
     }
-    
+
     .facility-section1,
     .facility-section2,
     .facility-section3,
@@ -1393,11 +1424,11 @@ print {
         padding: 10px 10px;
         margin: auto;
     }
-    
+
     .committed-teams {
         padding-top: 30px;
     }
-    
+
     .soccer-teams {
         text-align: center;
     }
@@ -1406,12 +1437,12 @@ print {
         grid-template-columns: auto auto;
         grid-template-rows: auto auto auto;
     }
-    
+
     .container-softball-teams {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
     }
-    
+
     .container-soccer-teams {
         grid-template-columns: auto auto auto;
         grid-template-rows: auto;
@@ -1421,305 +1452,338 @@ print {
         height: auto;
         width: auto;
     }
-    
+
     .container-soccer-teams img {
         max-width: 100px;
         margin: auto;
     }
-    
+
     /* Start External Page*/
 
-.externalone {
-    display: none;
-    max-width: 33%;
-    max-height: 33%;
-}
+    .external-grid1 {
+        display: grid;
+        grid-template-columns: auto auto 0%;
+        grid-template-rows: auto;
+        grid-column-gap: 1px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
 
-.externaltwo {
-    display: none;
-    max-width: 32%;
-    max-height: 30%;
-    position: relative;
-    float: right;
-    bottom: 190px;
-}
+    .kupar-content {
+        grid-column: 1/2;
+        grid-row: auto;
+    }
 
-.externalh4 {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    border: none;
-    display: inline-block;
-    margin-left: auto;
-}
+    .kupar-image {
+        grid-column: 3;
+        height: 60%;
+        grid-row: auto;
+    }
 
-.externalh4logos {
-    background-color: transparent;
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    border: none;
-    padding: 10px 10px;
-    display: inline-block;
-    margin: 0px 0 15px 0px;
-}
+    .external-grid2 {
+        display: grid;
+        grid-template-columns: auto 0%;
+        grid-template-rows: auto;
+        grid-column-gap: 20px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
 
-.buttonexternal {
-    font-family: "DM Sans", sans-serif;
-    font-size: .8em;
-    color: #fff;
-    background-color: #22A858;
-    border-radius: 10px;
-    border: none;
-    padding: 8px 15px 8px;
-    cursor: pointer;
-    text-decoration: none;
-    margin: auto;
-    display: inline-block;
-    width: 25%;
-    
-}
+    .maryville-travel-content {
+        grid-column: 1/2;
+        grid-row: auto;
+        margin-bottom: auto;
+    }
 
-/* End External Page */
+    .maryville-image {
+        grid-column: 2;
+        height: 55%;
+        grid-row: auto;
+        margin-bottom: auto;
+        transform: translateY(-15%)
+    }
 
 
-/* Start Testimony Page */
+    .externalh4 {
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+        display: inline-block;
+        margin-left: auto;
+    }
 
-.testimony-vid {
-    width: 70%;
-    height: auto;
-    margin: 25px 15% 45px;
-}
+    .externalh4logos {
+        background-color: transparent;
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+        padding: 10px 10px;
+        display: inline-block;
+        margin: 0px 0 15px 0px;
+    }
 
-.testimonyimg {
-    max-width: 10%;
-    max-height: 8%;
-    display: inline;
-    padding: 1%;
-}
+    .buttonexternal {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        margin: auto;
+        display: inline-block;
+        width: 25%;
+
+    }
+
+    /* End External Page */
 
 
-.testimonyimg2 {
-    max-width: 10%;
-    max-height: 10%;
-    display: inline-block;
-    padding: 3%;
-}
+    /* Start Testimony Page */
 
-.pastparticipants {
-    background-color: #EAEAEA;
-    text-align: center;
+    .testimony-vid {
+        width: 70%;
+        height: auto;
+        margin: 25px 15% 45px;
+    }
 
-}
+    .testimonyimg {
+        max-width: 10%;
+        max-height: 8%;
+        display: inline;
+        padding: 1%;
+    }
 
-.buttontestimonial {
-    font-family: "DM Sans", sans-serif;
-    font-size: .8em;
-    color: #fff;
-    background-color: #22A858;
-    border-radius: 5px;
-    border: none;
-    padding: 5px 10px 8px;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    margin-top: 8px;
-    float: right;
-}
 
-.buttontestimonial:hover {
-    background-color: #014D22;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
+    .testimonyimg2 {
+        max-width: 10%;
+        max-height: 10%;
+        display: inline-block;
+        padding: 3%;
+    }
 
-#formtestimony {
-    width: auto;
-    background-color: #EAEAEA;
-    border: 2px #014D22;
-    text-align: center;
-}
+    .pastparticipants {
+        background-color: #EAEAEA;
+        text-align: center;
 
-.form-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 20px;
-}
+    }
+
+    .buttontestimonial {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 5px;
+        border: none;
+        padding: 5px 10px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        margin-top: 8px;
+        float: right;
+    }
+
+    .buttontestimonial:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
+
+    #formtestimony {
+        width: auto;
+        background-color: #EAEAEA;
+        border: 2px #014D22;
+        text-align: center;
+    }
+
+    .form-grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 20px;
+    }
+
     .messagetestimony {
         height: 70%;
         background-color: #fff;
     }
-    
-.customerinformation {
+
+    .customerinformation {
         background-color: #fff;
     }
 
 
 
-/* End Testimony */
+    /* End Testimony */
 
 
-/* Contact Page */
+    /* Contact Page */
 
-.contacth2 {
-    color: #fff;
-    text-align: center;
-}
+    .contacth2 {
+        color: #fff;
+        text-align: center;
+    }
 
-.columnfirst {
-    width: auto;
-    padding-left: .5%;
-    height: auto;
-}
+    .columnfirst {
+        width: auto;
+        padding-left: .5%;
+        height: auto;
+    }
 
-.columnfirst img {
-    width: 60%;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .columnfirst img {
+        width: 60%;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-.columnsecond {
-    width: auto;
-    padding-left: 1.5%;
-    height: auto;
-}
+    .columnsecond {
+        width: auto;
+        padding-left: 1.5%;
+        height: auto;
+    }
 
-.columnsecond img {
-    width: 55%;
-    height: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    display: block;
-    
-}
+    .columnsecond img {
+        width: 55%;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        display: block;
 
-.columnthird {
-    width: auto;
-    padding-left: 1.5%;
-    height: auto;
-}
+    }
 
-.columnthird img {
-    width: 55%;
-    height: 160px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
+    .columnthird {
+        width: auto;
+        padding-left: 1.5%;
+        height: auto;
+    }
 
-.sectioncontact {
-    height: auto;
-}
+    .columnthird img {
+        width: 55%;
+        height: 160px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
-.contacth4alex {
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    border: none;
-    background-color: transparent;
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-}
+    .sectioncontact {
+        height: auto;
+    }
 
-.contacth4walker {
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    border: none;
-    background-color: transparent;
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-}
+    .contacth4alex {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+        background-color: transparent;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+    }
 
-.contacth4john {
-    color: #fff;
-    text-align: center;
-    font-size: 1em;
-    border: none;
-    background-color: transparent;
-    display: block;
-    margin-top: auto;
-    margin-left: auto;
-}
+    .contacth4walker {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+        background-color: transparent;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+    }
 
-.contacth4 {
-    text-decoration: none;
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    border: none;
-    display: block;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
-}
+    .contacth4john {
+        color: #fff;
+        text-align: center;
+        font-size: 1em;
+        border: none;
+        background-color: transparent;
+        display: block;
+        margin-top: auto;
+        margin-left: auto;
+    }
 
-.containertan {
-    background-color: #846B43;
-    padding: 0%;
-    display: block;
-    width: 100%;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .contacth4 {
+        text-decoration: none;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1em;
+        border: none;
+        display: block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
+    }
 
-.iconcontacttan {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
-    
-.labeldivision {
-    display: inline-block;
-}
+    .containertan {
+        background-color: #846B43;
+        padding: 0%;
+        display: block;
+        width: 100%;
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-formcontact {
-    width: auto;
-    border: 2px #014D22;
-    background-color: #EAEAEA;
-}
-    
-.form-gridcontact {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 20px;
-}
+    .iconcontacttan {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-.buttoncontact {
-    font-family: "DM Sans", sans-serif;
-    font-size: .8em;
-    color: #fff;
-    background-color: #22A858;
-    border-radius: 10px;
-    border: none;
-    padding: 8px 15px 8px;
-    cursor: pointer;
-    text-decoration: none;
-    display: block;
-    height: 50px;
-    margin-top: 5px;
-}
+    .labeldivision {
+        display: inline-block;
+    }
 
+    formcontact {
+        width: auto;
+        border: 2px #014D22;
+        background-color: #EAEAEA;
+    }
 
-.buttoncontact:hover {
-    background-color: #014D22;
-    color: #fff;
-    border-radius: 10px;
-    border: none;
-}
+    .form-gridcontact {
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    }
+
+    .buttoncontact {
+        font-family: "DM Sans", sans-serif;
+        font-size: .8em;
+        color: #fff;
+        background-color: #22A858;
+        border-radius: 10px;
+        border: none;
+        padding: 8px 15px 8px;
+        cursor: pointer;
+        text-decoration: none;
+        display: block;
+        height: 50px;
+        margin-top: 5px;
+    }
 
 
-/* End Contact Page */
+    .buttoncontact:hover {
+        background-color: #014D22;
+        color: #fff;
+        border-radius: 10px;
+        border: none;
+    }
+
+
+    /* End Contact Page */
 
 
     /* Tablet Viewport: Style Rules for footer*/
@@ -1846,14 +1910,14 @@ print {
         width: auto;
         margin: 0;
         padding: 0;
-       
+
     }
 
     .tablet-desktop-nav ul li:hover .eventsDropdown ul li a {
         text-align: left;
         font-family: "DM Sans", sans-serif;
         font-size: .785em;
-         border-bottom: solid 1px #22A858;
+        border-bottom: solid 1px #22A858;
     }
 
 
@@ -2098,14 +2162,14 @@ print {
         grid-column: 2/3;
         grid-row: auto;
     }
-    
+
     .img-basketball {
         grid-column: 1;
         grid-row: auto;
         height: auto;
         overflow: visible;
     }
-    
+
     .img-basketball img,
     .img-softball img,
     .img-soccer img {
@@ -2125,17 +2189,17 @@ print {
         padding: 0;
         margin: 0
     }
-    
+
     .content-softball {
         grid-column: 1;
         grid-row: auto;
     }
-    
+
     .img-softball {
         grid-column: 3;
         grid-row: auto;
         height: auto;
-        overflow: visible;        
+        overflow: visible;
     }
 
     .content-softball a {
@@ -2156,33 +2220,33 @@ print {
         grid-column: 2/3;
         grid-row: auto;
     }
-    
+
     .img-soccer {
         grid-column: 1;
         grid-row: auto;
         height: auto;
         overflow: visible;
     }
-    
+
     .learn-more-button3 {
         grid-column: 3;
         grid-row: 2;
         margin: -40px auto auto auto;
-        
+
     }
-    
+
     .learn-more-button1 {
         grid-column: 3;
         grid-row: 2;
         margin: -40px auto auto auto;
     }
-    
+
     .learn-more-button2 {
         grid-column: 2/3;
         grid-row: 2;
         margin: -40px 20px 0 0;
     }
-    
+
     .learn-more-button3 {
         grid-column: 3;
         grid-row: 2;
@@ -2199,19 +2263,19 @@ print {
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-    
-    .basketball-background-content, 
+
+    .basketball-background-content,
     .softball-background-content,
     .soccer-background-content {
         grid-column: 2/3;
         grid-row: auto;
     }
-    
+
     .basketball-background-img img {
         transform: translateY(5%);
         padding-bottom: 10px;
     }
-    
+
     .softball-background-img img {
         max-width: 75%;
         transform: translateY(9%);
@@ -2225,10 +2289,10 @@ print {
         float: right;
         padding-top: 10px;
     }
-    
+
     .container-facility {
         padding-top: 20px;
-    }    
+    }
 
     .facility-section {
         display: grid;
@@ -2245,12 +2309,12 @@ print {
         height: auto;
         overflow: visible;
     }
-    
+
     .facility-content {
         grid-column: 1;
         grid-row: auto;
     }
-    
+
     .facility-section1 {
         display: grid;
         grid-template-columns: auto auto 30%;
@@ -2266,12 +2330,12 @@ print {
         height: auto;
         overflow: visible;
     }
-    
+
     .facility-content1 {
         grid-column: 1;
         grid-row: auto;
     }
-    
+
     .facility-section2 {
         display: grid;
         grid-template-columns: 30% auto auto;
@@ -2287,12 +2351,12 @@ print {
         height: auto;
         overflow: visible;
     }
-    
+
     .facility-content2 {
         grid-column: 3;
         grid-row: auto;
     }
-    
+
     .facility-section3 {
         display: grid;
         grid-template-columns: auto auto 38%;
@@ -2308,12 +2372,12 @@ print {
         height: auto;
         overflow: visible;
     }
-    
+
     .facility-content3 {
         grid-column: 1;
         grid-row: auto;
     }
-    
+
     .facility-section4 {
         display: grid;
         grid-template-columns: 30% auto auto;
@@ -2329,7 +2393,7 @@ print {
         height: auto;
         overflow: visible;
     }
-    
+
     .facility-content4 {
         grid-column: 3;
         grid-row: auto;
@@ -2389,33 +2453,52 @@ print {
         margin: auto;
     }
 
-/* Start External Page*/
+    /* Start External Page*/
 
-    
-    .externalsectionone {
+
+    .external-grid1 {
+        display: grid;
+        grid-template-columns: auto auto 30%;
+        grid-template-rows: 175px;
+        grid-column-gap: 10px;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .kupar-content {
+        grid-column: 1/2;
+        grid-row: auto;
         height: auto;
     }
-    
-    .externalsectionone img {
-        float: right;
-        height: 70%;
-        width: 35%;
-        object-fit: contain;
-        display: block;
+
+    .kupar-image {
+        grid-column: 3;
+        height: 65%;
+        grid-row: auto;
     }
-    
-    .externalsectiontwo {
-        height: auto;
+
+    .external-grid2 {
+        display: grid;
+        grid-template-columns: auto 30%;
+        grid-template-rows: 185px;
+        grid-column-gap: 0%;
+        align-items: center;
+        padding: 0;
+        margin: 0;
     }
-    
-    .externaltwo {
-        display: block;
-        object-fit: contain;
-        margin-top: 10px;
-        float: right;
+
+    .maryville-travel-content {
+        grid-column: 1/2;
+        grid-row: auto;
         margin-bottom: auto;
-        transform: translateY(-7%);
-        
+    }
+
+    .maryville-image {
+        grid-column: 2;
+        height: 55%;
+        grid-row: auto;
+        transform: translateY(5%)
     }
 
     .externalh4 {
@@ -2438,7 +2521,7 @@ print {
         display: inline-block;
         margin: 0px 0 15px 0px;
     }
-    
+
     .buttonexternal {
         font-family: "DM Sans", sans-serif;
         font-size: .8em;
@@ -2452,7 +2535,7 @@ print {
         display: block;
         float: left;
         width: 15%;
-    
+
     }
 
     /* End External Page */
@@ -2518,25 +2601,25 @@ print {
         text-align: left;
         margin-left: auto;
     }
-    
+
     .form-grid {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
     }
-    
+
     .messagetestimony {
         height: 150px;
         width: 93%;
         background-color: #fff;
     }
-    
+
     .customerinformation {
         height: 300px;
         column-gap: 10px;
         background-color: #fff;
     }
-    
+
     legend {
         color: #014D22;
     }
@@ -2590,11 +2673,11 @@ print {
         margin-right: auto;
         display: block;
     }
-    
+
     .sectioncontact {
-    height: 255px;
+        height: 255px;
     }
-    
+
     .contacth4alex {
         color: #fff;
         text-align: center;
@@ -2629,17 +2712,17 @@ print {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .contacth4 {
-    background-color: transparent;
-    color: #fff;
-    font-size: 1em;
-    border: none;
-    display: inline-block;
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 10px;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1em;
+        border: none;
+        display: inline-block;
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 10px;
     }
 
     .containertan {
@@ -2649,7 +2732,7 @@ print {
         width: 100%;
         margin-top: 200px;
     }
-    
+
     .containertan ul {
         width: 80%;
         margin: auto;
@@ -2667,15 +2750,15 @@ print {
         border: 2px #014D22;
         background-color: #EAEAEA;
     }
-    
+
     .form-gridcontact {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
     }
-    
+
     .messageform {
-    height: 175px;
+        height: 175px;
     }
 
     .buttoncontact {
@@ -2700,7 +2783,7 @@ print {
     }
 
 
-/* End Contact Page */
+    /* End Contact Page */
 
     /* Desktop Viewport: Style rules for footer */
     #footer-logo {
@@ -2715,11 +2798,11 @@ print {
         min-width: 1920px;
         margin: 0 auto;
     }
-    
+
     #heroimg-tab-desk {
         width: auto;
     }
-    
+
     .tablet-desktop-nav ul li a {
         font-size: 1.5em;
     }
