@@ -439,6 +439,10 @@ p {
     margin-right: auto;
 }
 
+.containertan a {
+    color: #fff;
+}
+
 .iconcontacttan {
     display: block;
     margin-right: auto;
